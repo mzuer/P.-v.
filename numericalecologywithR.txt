@@ -1,0 +1,183 @@
+﻿NUMERICAL ECOLOGY WITH R
+
+#Unconstrained ordination
+
+* While cluster analysis looks for discontinuities in a dataset, ordination extracts the main trends in the form of continuous axes.
+* A multivariate data set can be viewed as a collection of sites positioned in a space where each variable defines one dimension. There are thus as many dimensions as variables.
+* The aim of ordination methods is to represent the data along a reduced number of orthogonal axes, constructed in such a way that they represent, in decreasing order, the main trends of the data. These trends can then be interpreted visually or in association with other methods such as clustering or regression. 
+* All these methods are descriptive: no statistical test is provided to assess the significance of the structures detected. That is the role of constrained ordination.
+* Most ordination methods (except NMDS) are based on the extraction of the eigenvectors of an association matrix. 
+* The basic principle of ordination in reduced space is the following. 
++ Imagine an n × p data set containing n objects and p variables. The n objects can be represented as a cluster of points in the p-dimensional space. 
++ Now, this cluster is generally not spheroid: it is elongated in some directions and flattened in others. These directions are not necessarily aligned with a single dimension (= a single variable) of the multidimensional space. 
++ The direction where the cluster is most elongated corresponds to the direction of largest variance of the cluster. This is the first axis that an ordination will extract. 
++ The next axis to be extracted is the second most important in variance, provided that it is orthogonal (linearly independent, uncorrelated) to the first one. 
++ The process continues until all axes have been computed.
+* When there are a few major structures in the data (gradients or groups) and the method has been efficient at extracting them, then the few first axes contain most of the useful information, i.e. they have extracted most of the variance of the data.
+* In that case, the distances among sites in the projection in reduced space (most often two-dimensional) are relatively similar to the distances among objects in the multidimensional space. 
+* However, an ordination can be useful even when the first axes account for small proportions of the variance. This may happen when there are some interesting structures in an otherwise noisy data set. 
+* The principal methods are:
++ Principal component analysis (PCA): the main eigenvector-based method. Works on raw, quantitative data. Preserves the Euclidean distance among sites.
++ Correspondence analysis (CA): works on data that must be frequencies or frequency-like, dimensionally homogeneous, and non-negative. Preserves the chi-2 distance among rows or columns. Mainly used in ecology to analyse species data tables.
++ Principal coordinate analysis (PCoA): devoted to the ordination of distance matrices, most often in the Q mode, instead of site-by-variables tables. Hence, great flexibility in the choice of association measures.
++ Nonmetric multidimensional scaling (NMDS): unlike the three others, this is not an eigenvector-based method. NMDS tries to represent the set of objects along a predetermined number of axes while preserving the ordering relationships among them. NMDS, like PCoA, can produce ordinations from any square distance matrix.
+
+###Principal component analysis (PCA)
+
+* Imagine a data set whose variables are normally distributed. This data set is said to show a multinormal distribution. 
+* The first principal axis (or principal-component axis) of a PCA of this data set is the line that goes through the greatest dimension of the concentration ellipsoid describing this multinormal distribution. 
+* The following axes, which are orthogonal to one another and successively shorter, go through the following greatest dimensions of the ellipsoid. 
+* One can derive a maximum of p principal axes from a data set containing p variables.
+* PCA carries out a rotation of the original system of axes defined by the variables, such that the successive new axes (called principal components) are orthogonal to one another, and correspond to the successive dimensions of maximum variance of the scatter of points. 
+* The principal components give the positions of the objects in the new system of coordinates. 
+* PCA works on a dispersion matrix S, i.e. an association matrix among variables containing the variances and covariances of the variables, or the correlations computed from dimensionally heterogeneous variables. 
+* It is exclusively devoted to the analysis of quantitative variables. 
+* The distance preserved is the Euclidean distance and the relationships detected are linear. 
+* It is not generally appropriate to the analysis of raw species abundance data. These can, however, be subjected to PCA  after an appropriate pre-transformation.
+* In a PCA ordination diagram, objects are represented as points and variables are displayed as arrows.
+* In PCA, the “inertia” is  either the sum of the variances of the variables (PCA on a covariance matrix) or, as in this case (PCA on a correlation matrix - correlation matrix is the normalized covariance matrix), the sum of the diagonal values of the correlation matrix, i.e. the sum of all correlations of the variables with themselves, which corresponds to the number of variables.
+* In PCA, the analysis is unconstrained, and so are the results.
+* Eigenvalues are measures of the importance (variance) of the axes. They can be expressed as "proportions explained", or proportions of variation accounted for, by dividing them by the total inertia.
+* Scaling: not to be confused with the argument scale calling for standardization of variables. “Scaling” refers to the way ordination results are projected in the reduced space for graphical display. There is no single way to optimally display objects and variables together in a PCA biplot, i.e. a plot showing two types of results, here the sites and the variables. 
+* Species scores = coordinates of the arrow heads of the variables. For historical reasons, response variables are always called “species” in vegan, no matter what they represent.
+* Site scores = coordinates of the sites in the ordination diagram. Objects are always called “Sites” in vegan output files.
+* PCA is not a statistical test, but a heuristic procedure: it aims at representing the major features of the data along a reduced number of axes (hence, the expression “ordination in reduced space”).
+* Avoid the mistake of interpreting the relationships among variables based on the proximities of the apices (tips) of the vector arrows instead of their angles in biplots.
+* PCA is not very sensitive to departure from multinormality, as long as the distributions are not exaggeratedly skewed. 
+* The main computational step of PCA is the eigen-decomposition of a dispersion matrix (linear covariances or correlations). Covariances must in turn be computed on quantitative data. 
+* PCA must be computed on a table of dimensionally homogeneous variables. The reason is that it is the sum of the variances of the variables that is partitioned into eigenvalues. Variables must be in the same physical units to produce a meaningful sum of variances (the units of a variance is the square of the units of the variable from which it was computed), or they must be dimensionless, which is the case for standardized or log-transformed variables.
+
+###Correspondence analysis (CA)
+
+* For the analysis of species presence–absence or abundance data, the raw data are first transformed into a matrix Q of cell-by-cell contributions to the Pearson chi-2 statistic, and the resulting table is submitted to a singular value decomposition to compute its eigenvalues and eigenvectors. 
+* The result is an ordination, where it is the chi-2 distance that is preserved among sites instead of the Euclidean distance. The chi-2 distance is not influenced by the double zeros. 
+* Therefore, CA is a method adapted to the analysis of species abundance data without pre-transformation. 
+* The data submitted to CA must be frequencies or frequency-like, dimensionally homogeneous and non-negative; that is the case of species counts or presence–absence data.
+* For technical reasons not developed here, CA ordination produces one axis fewer than min[n,p]. 
+* As in PCA, the orthogonal axes are ranked in decreasing order of the variation they represent, but instead of the total variance of the data, the variation is measured by a quantity called the total inertia (sum of squares of all values in matrix Q). 
+* Individual eigenvalues are always smaller than 1. To know the amount of variation represented along an axis, one divides the eigenvalue of this axis by the total inertia of the species data matrix.
+* In CA, both the objects and the species are generally represented as points in the same joint plot. 
+* As in PCA, two scalings of the results are most useful in ecology (for data matrices where objects are rows and species are columns): 
++ *CA scaling 1*: rows are at the centroids of columns. This scaling is the most appropriate if one is primarily interested in the ordination of objects (sites). In the multidimensional space, the chi-2 distance is preserved among objects. (1) The distances among objects in the reduced space approximate their chi-2 distances. Thus, object points that are close to one another are likely to be relatively similar in their species relative frequencies. (2) Any object found near the point representing a species is likely to contain a high contribution of that species. For presence–absence data, the object is more likely to possess the state “1” for that species.
++ *CA scaling 2*: columns are at the centroids of rows. This scaling is the most appropriate if one is primarily interested in the ordination of species. In the multidimensional space, the chi-2 distance is preserved among species. (1) The distances among species in the reduced space approximate their chi-2 distances. Thus, species points that are close to one another are likely to have relatively similar relative frequencies along the objects. (2) Any species that lies close to the point representing an object is more likely to be found in that object, or to have a higher frequency there than in objects that are further away in the joint plot.
+* The Kaiser–Guttman criterion and the broken stick model can be applied to CA axes for guidance as to the number of axes to retain. 
+* *Multiple correspondence analysis (MCA)* is the counterpart of PCA for the ordination of a table of categorical variables, i.e. a data frame in which all variables are factors. 
+
+###Principal Coordinate Analysis (PCoA)
+
+* PCA as well as CA impose the distance preserved among objects: the Euclidean distance (and several others with pre-transformations) for PCA and the chi-2 distance for CA. 
+* If one wishes to ordinate objects on the basis of another distance measure, more appropriate to the problem at hand, then PCoA is the method of choice. It provides a Euclidean representation of a set of objects whose relationships are measured by any similarity or distance measure chosen by the user. 
+* Like PCA and CA, PCoA produces a set of orthogonal axes whose importance is measured by eigenvalues. Since it is based on an association matrix, it can directly represent the relationships either among objects (if the association matrix was in Q mode) or variables (if the association matrix was in R mode). 
+* If it is necessary to project variables, e.g. species, on a PCoA ordination of the objects, the variables can be related a posteriori to the ordination axes using correlations or weighted averages and drawn on the ordination plot. 
+* In the case of Euclidean association measures, PCoA behaves in a Euclidean manner. For instance, computing a Euclidean distance among sites and running a PCoA yields the same results as running a PCA on a covariance matrix of the same data and looking at the scaling 1 ordination results. 
+* If the association coefficient used is non-Euclidean, then PCoA may react by producing several negative eigenvalues in addition to the positive ones (and a null eigenvalue in-between). The axes corresponding to negative. eigenvalues cannot be represented on real ordination axes since they are complex. One can avoid complex axes by keeping the eigenvectors with their original Euclidean norm (vector length = 1) instead of dividing each one by the square root of its eigenvalue, as is usual in the PCoA procedure. 
+* The ordination axes of a PCoA can be interpreted like those of a PCA or CA: proximity of objects represents similarity in the sense of the association measure used.
+
+#Canonical ordination
+
+* Simple (unconstrained) ordination analyses one data matrix and reveals its major structure in a graph constructed from a reduced set of orthogonal axes. It is therefore a passive form of analysis, and the user interprets the ordination results a posteriori. The ordination procedure itself is not influenced by external variables; these may be only considered after the computation of the ordination. One lets the data matrix express the relationships among objects and variables without constraint. This is an exploratory, descriptive approach. 
+* Canonical ordination, on the contrary, associates two or more data sets in the ordination process itself. Consequently, if one wishes to extract structures of a data set that are related to structures in other data sets, and/or formally test statistical hypotheses about the significance of these relationships, canonical ordination is the way to go. Canonical ordination, on the contrary, explicitly explores the relationships between two matrices : a response matrix and an explanatory matrix in some cases (asymmetrical analysis), and two matrices with symmetrical roles in other cases (symmetrical analysis). Both matrices are used in the production of the ordination.
+* The way to combine the information of two (or, in some cases, more) data matrices depends on the method of analysis : 
++ The two asymmetrical methods that are mostly used in ecology nowadays : redundancy analysis (RDA) and canonical correspondence analysis (CCA). Both combine multiple regression with classical ordination (PCA or CA). The significance of canonical ordinations are tested by means of permutations.
++ Linear discriminant analysis (LDA) looks for a combination of quantitative variables to explain a predefined grouping of the objects.
++ Canonical correlation analysis (CCorA), co-inertia analysis (CoIA) and multiple factor analysis (MFA) are three symmetrical methods that compute eigenvectors describing the common structure of two or several data sets.
+
+##Asymetrical methods
+
+###Redundancy analysis (RDA)
+
+* Combines regression and principal component analysis (PCA).
+* Conceptually, RDA is a multivariate (meaning multiresponse) multiple linear regression followed by a PCA of the table of fitted values. 
+* It works as follows, on a matrix Y of centred response data and a matrix X of centred (or, more generally, standardized) explanatory variables:
++ Regress each (centred) y variable on explanatory table X and compute the fitted (ŷ) (this is the only required matrix in most analyses) and residual (y~res~) vectors (if needed). Assemble all vectors ŷ into a matrix Ŷ of fitted values ;
++ Compute a PCA of the matrix Ŷ of fitted values; this analysis produces a vector of canonical eigenvalues and a matrix U of canonical eigenvectors ;
++ Use matrix U to compute two types of ordination site scores: use either the original centred matrix Y to obtain an ordination in the space of the original variables Y (i.e. compute YU, obtaining site scores called “Site scores (weighted sums of site scores)” in vegan), or use the matrix Ŷ of fitted values to obtain an ordination in the space of variables X (i.e. compute ŶU, which produces fitted site scores called “Site constraints (linear combinations of constraining variables)” in vegan)
++ The residual values from the multiple regressions (i.e. Y~res~ = Y − Ŷ) may also be submitted to a PCA to obtain an unconstrained ordination of the residuals. This partial PCA, which is not strictly speaking part of the RDA, is computed by vegan’s rda() function.
+* RDA computes axes that are linear combinations of the explanatory variables. This method seeks, in successive order, a series of linear combinations of the explanatory variables that best explain the variation of the response matrix. The axes defined in the space of the explanatory variables are orthogonal to one another. RDA is therefore a constrained ordination procedure. 
+* The difference with unconstrained ordination is important: the matrix of explanatory variables conditions the “weights” (eigenvalues), the orthogonality and the direction of the ordination axes.
+* In RDA, one can truly say that the axes explain or model (in the statistical sense) the variation of the dependent matrix. 
+* Furthermore, a hypothesis (H0) of absence of linear relationship between Y and X can be tested in RDA; this is not the case in PCA.
+* An RDA produces min[p, m, n − 1] canonical axes, where n is the number of objects and m is the number of degrees of freedom of the model (number of numeric explanatory variables, including levels of factors if qualitative explanatory variables are included; a factor with k classes requires (k − 1) dummy variables for coding, so there are (k − 1) degrees of freedom for this factor). 
+* Each of the canonical axes is a linear combination (i.e. a multiple regression model) of all explanatory variables.
+* RDA is usually computed, for convenience, on standardized explanatory variables; the
+fitted values of the regressions, as well as the canonical analysis results, are unchanged
+by standardization of the X variables.
+* In vegan’s rda() function, the variation of the data matrix that cannot be explained by the environmental variables (i.e. the residuals of the regressions) is expressed by the unconstrained PCA eigenvalues, which are given after the canonical eigenvalues.
+* RDA can be computed on a covariance or a correlation response matrix. To obtain an analysis on the correlation response matrix, standardization of the response data is done by the option scale=TRUE in vegan’s rda().
+* The statistical significance of an RDA (global model) and that of individual canonical axes can be tested by permutations. 
+* The overall variance is partitioned into constrained and unconstrained fractions. The constrained fraction is the amount of variance of the Y matrix explained by the explanatory variables. Expressed as a proportion, it is equivalent to an R^2^ in multiple regression; in RDA this quantity is also called the bimultivariate redundancy statistic. However, this R^2^ is biased, like the unadjusted R^2^ of multiple regression. The R^2^ and adjusted R^2^ can be computed using vegan’s function RsquareAdj().
+* The canonical (RDAx) eigenvalues measure amounts of variance explained by the RDA model, whereas the residual (PCx) eigenvalues measure amounts of variance represented by the residual axes, but not explained by the RDA model.
+* In the rda() output, the canonical coefficients, i.e. the equivalent of regression coefficients for each explanatory variable on each canonical axis, are missing. Can be retrieved by typing coef().
+* Plot the results of RDA : triplot since there are three different entities in the plot: sites, response variables and explanatory variables. To differentiate the latter two, we draw arrowheads only on the vectors of the quantitative explanatory variables, not on the response variable vectors.
+* The choice between weighted sums of species ("wa" in vegan) and the fitted site scores (abbreviated “lc”) for the triplots is still controversial. On the one hand, the fitted site scores are strictly orthogonal linear combinations of the explanatory variables; but they nevertheless represent clearly and exclusively what can be modelled using the explanatory variables at hand. On the other hand, the site scores that are weighted sums of species appear more robust to noise in the environmental variables. However, weighted sums of species (wa) scores are “contaminated” scores, halfway between the model fitted by the RDA procedure and the original data, and as such it is not entirely clear how they should be interpreted. Independently of the choice of site scores, the interpretation of the constrained triplots must be preceded by a test of statistical significance. As in multiple regression, a non-significant result must not be interpreted and must be discarded.
+* The interpretation of the two scalings is the same as in PCA. However, the presence of vectors and centroids of explanatory variables calls for additional interpretation rules : 
++ *Scaling 1 – distance biplot*: (1) Projecting an object at right angle on a response variable or a quantitative explanatory variable approximates the position of the object along that variable. (2) The angles between response and explanatory variables in the biplot reflect their correlations (but not the angles among response variables). (3) The relationship between the centroid of a qualitative explanatory variable and a response variable (species) is found by projecting the centroid at right angle on the species variable, as for individual objects, since we are projecting the centroid of a group of objects. (4) Distances among centroids, and between centroids and individual objects, approximate their Euclidean distances;
++ *Scaling 2 – correlation biplot*: (1) Projecting an object at right angle on a response or a quantitative explanatory variable approximates the value of the object along that variable. (2) The angles in the biplot between response and explanatory variables, and between response variables themselves or explanatory variables themselves, reflect their correlations. (3) The relationship between the centroid of a qualitative explanatory variable and a response variable (species) is found by projecting the centroid at right angle on the species variable (as for individual objects). (4) Distances among centroids, and between centroids and individual objects, do not approximate their Euclidean distances.
+* Permutation tests of RDA results. In RDA, the use of parametric tests is possible only when the response variables are standardized.
+* *Partial RDA* : partial canonical ordination is the multivariate equivalent of partial linear regression. For instance, it is possible to run an RDA of a (transformed) plant species data matrix Y, explained by a matrix of climatic variables X, in the presence of soil covariables W. Such an analysis would allow the user to display the patterns of the species data uniquely explained by a linear model of the climatic variables when the effect of the soil factors is held constant.
+* *RDA as a Tool for Multivariate ANOVA*: in its classical, parametric form, multivariate analysis of variance (MANOVA) has stringent conditions of application and restrictions (e.g. multivariate normality of each group of data, homogeneity of the variance–covariance matrices, number of response variables smaller than the number of objects minus the number of groups). RDA offers an elegant alternative, the condition of homogeneity of the variance–covariance matrices still applies, however. The trick is to use factor variables and their interactions as explanatory variables. 
+
+###Canonical correspondence analysis (CCA) 
+
+* It's the canonical counterpart of CA. It shares many characteristics with RDA
+* Basically, it is a weighted form of RDA applied to the same matrix Q of
+contributions to the chi-2 statistic as used in CA. CCA shares the basic properties of CA, combined with those of a
+constrained ordination. It preserves the chi-2 distance among sites, and species are
+represented as points in the triplots. 
+* Provided that some conditions are fulfilled, CCA is a good approximation of a multivariate Gaussian regression. 
+* One particularly attractive feature of a CCA triplot is that species are ordered along the canonical axes following their ecological optima. This allows a relatively easy ecological interpretation of species assemblages. 
+*CCA does have some drawbacks. Its use should be limited to situations where rare species are well sampled and are seen as potential indicators of particular characteristics of an ecosystem; the alternative is to eliminate rare species from the data table before CCA. 
+* Furthermore, the proportion of total inertia represented by explained inertia (inertia is the measure of explained variation of the data in CCA), which can be interpreted as an R2, is also biased, but no simple method exists for its adjustment. 
+
+###Linear Discriminant Analysis (LDA)
+
+* LDA differs from RDA and CCA in that the response variable is a grouping of the sites. This grouping may have been obtained by clustering the sites on the basis of a data set, or it may represent an ecological hypothesis. 
+* LDA tries to determine to what extent an independent set of quantitative variables can explain this grouping.
+* The site typology must have been obtained independently from the explanatory variables used in the LDA; otherwise, the procedure would be circular and the tests would be invalid.
+* LDA computes discriminant functions from standardized descriptors. These coefficients quantify the relative contributions of the (standardized) explanatory variables to the discrimination of objects. 
+* On the other hand, identification functions can be computed from the original (not standardized) descriptors and can be used to find the group to which a new object should be attributed. 
+*  To perform LDA, one must ensure that the within-group covariance matrices of the explanatory variables are homogeneous, a condition that is frequently violated with ecological data.
+
+##Symetrical methods
+
+* “Symmetrical analysis” means that the two matrices involved in the analysis play the same role; there is no “dependent” or “explanatory” matrix. 
+* The choice between symmetrical and asymmetrical ordination methods is akin to the choice between correlation and model I regression analysis. The former is more descriptive or exploratory, and also appropriate when no unidirectional causal hypothesis is imbedded in the model, while the latter is more inferential, i.e. oriented at explaining the variation of response variables by means of a (hopefully parsimonious) linear combination of explanatory variables. 
+* The two approaches are therefore complementary; they fulfil different research aims and should not be opposed as competitors on the same terrain.
+
+###Canonical Correlation Analysis (CCorA) 
+
+* CCorA is computed on two data tables. 
+* The aim of the method is to represent the observations along canonical axes that maximize the correlations between the two tables. 
+* The solution is found by maximizing the between-set dispersion, expressed by the covariance matrix between the two sets of variables, with respect to the within-set dispersion.
+* The two sets of variables must be quantitative and are assumed to be multinormally distributed. The limitation of the method is that the total number of variables in the two tables must be smaller than (n − 1).
+* One can also test the hypothesis of linear independence of the two multivariate data tables. 
+* The availability of RDA and CCA has limited the application of CCorA in ecology, since most ecological problems are stated in terms of control-response hypotheses for which asymmetrical ordination should be preferred. 
+* CCorA is more appropriate for exploratory purposes in cases where the two groups of variables are likely to influence each other, which may often occur in real ecological systems.
+
+###Co-inertia Analysis (CoIA)
+
+* Very general and flexible way to couple two or more data tables. CoIA is a symmetrical approach allowing the use of various methods to model the structure in each data matrix.
+* The analysis for two data tables is computed as follows:
++ Compute the covariance matrix crossing the variables of the two data tables. The sum of squared covariances is the total co-inertia. Compute the eigenvalues and eigenvectors of that matrix. The eigenvalues represent a partitioning of the total co-inertia.
++ Project the points and variables of the two original data tables on the co-inertia axes. By means of graphs, compare the projections of the two data tables in the common co-inertia space.
+* One particularly attractive feature of CoIA is the possibility to choose the type of ordination to apply to each data table prior to the joint analysis. Of course the type of ordination must be chosen according to the research question and the mathematical type of the data. 
+* Furthermore, within the intrinsic limits of the ordination methods applied to each data set, CoIA imposes fewer constraints than CCorA regarding the mathematical type and the number of variables in the two tables. 
+* However, that the row weights must be equal in the two separate ordinations, a condition that renders the use of CoIA with correspondence analysis (CA) difficult. CA is a weighted regression approach, and weights depend on the data. To apply CoIA, a choice must therefore be made about the weights of one or the two separate analyses to constrain them to be equal.
+
+###Multiple Factor Analysis
+
+* Another approach to the symmetrical analysis of a data set described by k (usually k > 2) subsets or groups of variables.
+* This analysis is correlative; it excludes any hypothesis of causal
+influence of a data set on another. 
+* The variables must belong to the same mathematical
+type (quantitative or qualitative) within each subset. 
+* If all variables are
+quantitative, then MFA is basically a PCA applied to the whole set of variables in
+which each subset is weighted. 
+* MFA computation consists in the following steps:
++ A PCA is computed for each (centred and optionally standardized) subset of variables. Each centred table is then weighted to give them equal weights in the global analysis, accounting for different variances among the groups. This is done by dividing all its variables by the first eigenvalue obtained from its PCA;
++ The k weighted data sets are concatenated. The resulting table is submitted to a global PCA;
++ The different subsets of variables are then projected on the global result; common structures and differences are assessed for objects and variables.
+* The similarity between the geometrical representations derived from each group of variables is measured by the RV coefficient (=the ratio of the total co-inertia to the square root of the product of the squared total inertias of the separate analyses, it is a multivariate generalization of the Pearson correlation coefficient). RV coefficients, which vary between 0 and 1, can be tested by permutations.
+* This method is very useful to explore the complex relationships among several ecologically meaningful groups of descriptors, whatever their number and type.
+

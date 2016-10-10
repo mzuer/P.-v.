@@ -1,0 +1,328 @@
+---
+title: "RDA & CCA"
+output: html_document
+---
+
+###Redundancy Analysis (RDA)
+
+(=regression followed by PCA)
+
+
+*Borcard et al. (2011)*
+
+* Method combining regression and principal component analysis (PCA).
+Direct extension of regression analysis to model multivariate response data.
+* Multivariate (meaning multiresponse) multiple linear
+regression followed by a PCA of the table of fitted values. 
+* Works on a matrix Y of centred response data and a matrix X of centred (or, more generally,
+standardized) explanatory variables.
+* Computes axes that are linear combinations of the explanatory variables. In other words, this
+method seeks, in successive order, a series of linear combinations of the explanatory
+variables that best explain the variation of the response matrix. 
+* The axes defined in the space of the explanatory variables are orthogonal to one another.
+RDA is therefore a constrained ordination procedure. 
+* The difference with unconstrained ordination is important: the matrix of explanatory variables conditions the
+"weights" (eigenvalues), the orthogonality and the direction of the ordination axes.
+* In RDA, one can truly say that the axes explain or model (in the statistical sense)
+the variation of the dependent matrix. Furthermore, a hypothesis (H0) of absence of
+linear relationship between Y and X can be tested in RDA; this is not the case in PCA.
+* Each of the canonical axes is a linear combination (i.e. a multiple regression model) of all explanatory variables.
+RDA is usually computed, for convenience, on standardized explanatory variables; the
+fitted values of the regressions, as well as the canonical analysis results, are unchanged
+by standardization of the X variables.
+* The statistical significance of an RDA (global model) and that of individual
+canonical axes can be tested by permutations.
+
+
+*Legendre & Legendre (2012)*
+
+* It's one of the forms of canonical analysis available to interpret the structure of quantitative data using one or several tables of explanatory variables.
+* RDA test has greater power to detect a difference than a co-inertia test because it uses the information more efficiently. 
+* The null hypothesis of the RDA test is H0 : there is no difference between before and after for data described by the same variables, whereas the null hypothesis in CoIA is H0: the two data sets have no more co-inertia structure than random data sets would have, without any reference to the variables being the same in the two data sets.
+* Redundancy is synonymous with explained variance.
+* Plot : 
+    + Each canonical ordination axis corresponds to a direction, in the multivariate scatter of objects, that is maximally related to a linear combination of the explanatory variables X. A canonical axis is thus similar to a principal component.
+    + 2 ordinations of the objects may be plotted along the canonical axes: 
+         1. linear combinations of the Y variables (matrix F), as in PCA
+         2. linear combinations of the fitted variables (matrix Z) which are thus also linear combinations of the X variables. 
+    + Preserves the Euclidean distances among objects in matrix , which contains values of Y fitted by regression 
+to the explanatory variables X ; variables in are therefore linear combinations of the X variables.
+* It works on a matrix Y of centred response data and a matrix X of centred (or, more generally, standardized) explanatory variable.
+
+#####With altitude 
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,12:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+```{r RDA}
+#For RDA : do not take derived measures
+#Also take altitude as environmental variables (to do enventuallay variance partitioning later)
+#Standardize and convert into data frame
+mes<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+
+# rda(Y,X,W) where Y is the response matrix,X is the matrix of explanatory variables and W is an optional matrix of covariables
+rda.site<-rda(mes~.,env)   #same as : rda(mes,env), but need formula for anova 
+#summary(rda.site)
+coef(rda.site)
+plot(rda.site)
+
+# percentage of variance explained by axis 1
+rda.site$CCA$eig[1]/rda.site$tot.chi
+
+# percentage of variance explained by axis 2
+rda.site$CCA$eig[2]/rda.site$tot.chi
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(rda.site)$r.squared)
+(R2_adj <- RsquareAdj(rda.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2_adj)
+vif.cca(rda.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(rda.site,by="axis")
+anova(rda.site,by="term")
+
+```
+
+
+#####Without altitude
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+library(packfor) 
+```
+```{r RDA_noalt}
+#For RDA : do not take derived measures
+#Also take altitude as environmental variables (to do enventuallay variance partitioning later)
+#Standardize and convert into data frame
+mes<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+# rda(Y,X,W) where Y is the response matrix,X is the matrix of explanatory variables and W is an optional matrix of covariables
+rda.site<-rda(mes~.,env)   #same as : rda(mes,env), but need formula for anova 
+#summary(rda.site)
+coef(rda.site)
+plot(rda.site)
+
+# percentage of variance explained by axis 1
+rda.site$CCA$eig[1]/rda.site$tot.chi
+
+# percentage of variance explained by axis 2
+rda.site$CCA$eig[2]/rda.site$tot.chi
+
+# percentage of variance explained by axis 3
+rda.site$CCA$eig[3]/rda.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(rda.site$CCA$eig[2]/rda.site$tot.chi)+(rda.site$CCA$eig[1]/rda.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(rda.site$CCA$eig[2]/rda.site$tot.chi)+(rda.site$CCA$eig[1]/rda.site$tot.chi)+(rda.site$CCA$eig[3]/rda.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(rda.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(rda.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2_adj)
+vif.cca(rda.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(rda.site,by="axis")
+anova(rda.site,by="term")
+
+```
+
+
+###Canonical Correspondence Analysis (CCA)
+
+#####Legendre et Legendre (2012)
+
+* Similar to RDA, the difference is that CCA preserves the $\chi$~2~ distance (as in correspondence analysis), instead of the Euclidean distance among objects in matrix . Calculations are a bit
+more complex. 
+* RDA is used when the X variables display linear relationships with the Y variables, whereas CCA can be used
+in the cases where correspondence analysis would be appropriate for an ordination of Y alone.
+
+#####Borcard et al. (2011)
+
+* Basically, it is a weighted form of RDA applied to the same matrix Q of
+contributions to the \$chi$~2~ statistic as used in CA.
+* CCA shares the basic properties of CA, combined with those of a
+constrained ordination. 
+* It preserves the $\chi$~2~ distance among sites, and species are
+represented as points in the triplots. 
+* ter Braak (1986) has shown that, provided that
+some conditions are fulfilled, CCA is a good approximation of a multivariate
+Gaussian regression. 
+* CCA does have some drawbacks, however, related to the mathematical properties
+of the $\chi$~2~ distance. 
+* Furthermore, the proportion of total inertia represented
+by explained inertia (inertia is the measure of explained variation of the
+data in CCA), which can be interpreted as an R~2~, is also biased, but no simple
+method exists for its adjustment. 
+
+#####Alatalo et al. (2014)
+
+* Because it was unknown whether the underlying responses were linear or non-linear, they performed both CCA and RDA. Since the three first axes of RDA explained a larger cumulative proportion of variance, they chose to use RDA.
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+
+```{r CCA_noalt_raw}
+cca.site<-cca(mes~.,env)   
+summary(cca.site)
+coef(cca.site)
+plot(cca.site)
+
+# percentage of variance explained by axis 1
+cca.site$CCA$eig[1]/cca.site$tot.chi
+
+# percentage of variance explained by axis 2
+cca.site$CCA$eig[2]/cca.site$tot.chi
+
+# percentage of variance explained by axis 3
+cca.site$CCA$eig[3]/cca.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)+(cca.site$CCA$eig[3]/cca.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(cca.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(cca.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2)
+vif.cca(cca.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(cca.site,by="axis")
+anova(cca.site,by="term")
+
+```
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+
+```{r CCA_noalt_std}
+
+es<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+
+cca.site<-cca(mes~.,env)   
+summary(cca.site)
+coef(cca.site)
+plot(cca.site)
+
+# percentage of variance explained by axis 1
+cca.site$CCA$eig[1]/cca.site$tot.chi
+
+# percentage of variance explained by axis 2
+cca.site$CCA$eig[2]/cca.site$tot.chi
+
+# percentage of variance explained by axis 3
+cca.site$CCA$eig[3]/cca.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)+(cca.site$CCA$eig[3]/cca.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(cca.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(cca.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2)
+vif.cca(cca.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(cca.site,by="axis")
+anova(cca.site,by="term")
+
+```
+=> Canonical correlations are unchanged by the standardization.
+
+
+#####With altitude (CCA)
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,12:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+```{r CCA_alt}
+
+cca.site<-cca(mes~.,env)   #same as : cca(mes,env), but need formula for anova 
+summary(cca.site)
+coef(cca.site)
+plot(cca.site)
+
+# percentage of variance explained by axis 1
+cca.site$CCA$eig[1]/cca.site$tot.chi
+
+# percentage of variance explained by axis 2
+cca.site$CCA$eig[2]/cca.site$tot.chi
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(cca.site)$r.squared)
+(R2_adj <- RsquareAdj(cca.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the cca-model
+vif.cca(cca.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(cca.site)
+```
+

@@ -1,0 +1,2163 @@
+---
+title: "*Poly*.s in Wallis"
+date: "February 2015"
+output: html_document
+---
+#Introduction
+<div style="text-align: justify">
+
+* Changes in growth and development pattern as well as life history with altitude (e.g. Körner 2003).
+* Since the number of bulbils and flowers in *Polygonum viviparum*'s inflorescence is highly variable, it is presumably a well-suited species to investigate the relative investment in asexual versus sexual reproduction along altitudinal gradient.
+
+####Plant species : *Polygonum viviparum* L. (Polygonaceae)
+
+* *Bistorta vivipara* belongs to Persicarieae (Schuster et al. 2011, Galasso et al. 2009), Subtribus Koenigiinae (Galasso et al. 2009).
+* "Highly" polyploid : 2n=88,100,110,132 (Lauber & Wagner 2012) ; 2n=66,77,80,88,96,99, approx. 100, approx. 110, 120 and 132 - Love & Love 1948, 1974, 1975 ; Wcislo 1967 ; Engell 1973 ; Law et al. 1983).
+* Possible Asian origin, only known diploid chromosome number from China (Li et al. 2003 ; Marr et al. 2013).
+* Clonal (pseudoviviparous).
+* At global scale, low genetic diversity (Marr et al. 2013). May be surprising at population level (Bauert 1996 ; Diggle et al. 1998). 
+* Can reach an age of at least 26 years (Callaghan & Collins 1981).
+* Bulbils = vegetative axillary buds with the 1st internode expanded in length and width serving storage function. They are more accurately termed brood tubers because storage reserves are located in the stem rather than leaf bases (Diggle 1997).
+* *P. v.* is an exception among species with extreme floral preformation because flowers late (one of the rare species to commence flowering later than 2 months after snow melt) (Körner 2003).
+* Extreme preformation. 4 years required for each leaf and inflorescence from initiation to functional and structural maturity. 1-year delay in measurable plant responses to environmental variation (Diggle 1997).
+* By the end of August of the 3rd year of inflorescence development, the identity of each meristem as a bulbil or flower is stablished. Thus, the number and ratio of sexual to asexual reproductive structures borne by an inflorescence are determined in the year prior the maturation (Diggle 1997).
+* Because extended duration of inflorescence development, cannot rapidly match current reproductive allocation to available resources by initiation of additional flowers. Alternative resource allocation strategy : "overinitiation" of inflorescences, regulation of allocation through later inflorescence abortion. Inflorescence abortion with control of flowers and bulbils initiation provides developmental flexibility critical for regulation of pre-anthesis allocation to reproductive funcions (Diggle 1997).
+* Invariant architecture. Only mechanism for rapid (within season) aboveground vegetative response will be primarily restricted to biochemical processes and tissue-level allocation of nutrients and carbohydrates. Because vegetative response is so limited, capacity to regulate reproductive allocation acquires added significance (Diggle 1997).
+* Possibly different ecological roles of sexual and asexual propragules (e.g. Abrahamson 1980 : asexual advantageous at low population density, sexual at high density). Since in *P. v.* asexual and sexual propagules are similar in size, apart from the tendency for bulbils to occupy the lower part of inflorescences, there is little to suggest that they have different capacities for dispersal. Therefore necessary to look for selective forces arising from the genetic effects of sex rather than the ecological characteristics of the propagules (Law et al. 1983). 
+
+####Results of previous studies on variation in sexual reproduction with altitude
+
+* Trade-off between sexual and asexual reproduction : negative correlation between number of flowers and number of bulbils (Totland & Nyléhn 1998 ; Law et al. 1983 ; Bauert 1993).
+* Increase in allocation to vegetative reproduction with increasing altitude in the Swiss Alps (Bauert 1993).
+* Increase in sexual reproduction with altitude in the Qinghai-Tibet Plateau. Height of inflorescence and total number of flowers and bulbils decrease significantly, but no significant effect on bulbils and flowers number. Weak correlation between the proportion of flowers per population and altitude (Fan & Yang 2009).
+* Stem length differences of lowland and highland clones of the Alps persisted under identical conditions in culture (Bauert 1996). 
+* Average length of stems and the mean number of reproductive organs (flower+bulbils) decreased significantly with altitude. On average, ratio of flowers to bulbils declined at high altitudes. (Bauert 1993).
+* No systematic trade-off between reproductive, growth and persistence functions. Allocation to sexual reproduction does not correlate to the environmental gradients nor to any trait measured (Boucher et al. 2013). 
+* Most frequent linkages : between stem length and spike length. Altitude, substrate and interactions between them significantly affected the differences in characters between samples. Altitudinal zone had stronger effect than substrate type on the difference between characters. Then effect of altitude on characters differed dramatically between substrat types. Substrate type affected the calculated characters less but it influenced the shift between vegetative and generative reproduction.  
+
+####Effect of environmental variables on growth and reproduction of *Polygonum viviparum*
+
+* Temperature as the main environmental gradient and the primary determinant for *P. v.*'s environmental niche (Boucher et al. 2013).
+* Warmer conditions appear to have only weak or even no influence on the width of the largest leaf on the stem or on the number of flowers and bulbils (Totland & Nyléhn 1998 ; Gugerli & Bauert 2001).
+* Experimentally increased mean temperature did not influence vegetative parameters significantly but caused allocation of biomass to reproductive structures (Wookey et al. 1994).
+* Under experimentally increased temperatures (OTC), bulbil biomass and flowering stem height were increased (Gugerli & Bauert 2001).
+* Under warmer environments, the harvested plants were heavier and carried heavier bulbils than control plants but neither bulbils nor flower numbers showed a significant response to temperature increase (Totland & Nyléhn 1998).
+* Bulbil germination weakly temperature dependent (emerged at all temperatures 2-25°C), faster emergence at higher temperature (Dormann et al. 2002).
+* Ratio of flowers to bulbils smaller in plants from places where snow melted later : fewer flowers and increased proportion of bulbils when the growing season is shorter (Tomita & Masuzawa 2010).
+* Environmental factors explained 45% of the variation in plant performance and density between populations. Soil pH, altitude and season length were the most influential of the environmental variables. Season length highly important for average bulbil weight. Flowers and bulbils number unaffected by experimentally increased temperature (Totland & Nyléhn 1998).
+* Solar radiation did not explain any fuctional variability characteristic at the population level (Boucher et al. 2013).
+* Bulbils germinate successfully, especially in very moist places (Dormann et al. 2002).
+* Soil moisture regime important for the establishment of plants and survival of established plants is reduced by competition for light (Petersen 1981).
+* Dramatical response to nutrient addition both in increasing vegetative development (leaf size, corm weight) and asexual reproductive development (spike length, bulbils number and weight) : suggest opportunism (Wookey et al. 1994).
+* Water addition had no effect on performance of *P. v.* (Wookey et al. 1994).
+* Deviations up to 40% in flowers and bulbils production in plants with 2 stems : plastic trait, at least partly under environmental control (Bauert 1993).
+* Correlation of the proportion of bulbils with biotic factors : amount of vascular plant cover (negative correlation at 2 sites), cover of *P. v.* (positive correlation at 1 site), number of *P. v.*'s inflorescence (negative correlation at 3 sites), suggest that both intra- and interspecific factors of the biotic environment play a role in the control of bulbil and flower production (Law et al. 1983).
+
+####Aims
+
+Investigate if there is a shift towards asexual or sexual reproduction along an altitudinal gradient (altitude range : 1088 - 3212 m.a.s.l.).
+
+Multivariate analyses (ordination) to investigate the data and linear mixed-effects model to describe the change of a ponderate ratio of bulbils with altitude.
+
+Germination of a subset of bulbils and compare the bulbils to flowers ratio of the (clonal) plant derived from the bulbil with that of the parent plant => dead end...
+
+#Materials and methods
+<div style="text-align: justify">
+
+##Sample sites and measures
+* Sampling of 1704 inflorescences of *P. viviparum* in Wallis in the summer of 2014 (July-August). 9 transects in different regions ("site"), 4 different stations minimum along an altitudinal gradients ("pop"). Approximately 30 indiviudals per station (see Appendix 1).
+* Direct measures : height of the plant (h), total length of the spike (bulbils and flowers) (l), length of the bulbils part of the spike (lB), length of the flowers part of the spike (lF), number of bulbils (nB) and number of flowers (nF). Measures were made on the field, except the number of bulbils and flowers was occasionally determined later (even if a part of bulbils or flowers was lost, number of each can be determined by counting hails and scars of attachment on the spike).
+* Derived measures : bulbils ratio of the spike in number (nratioB=nB/(nB+nF)) and length (lratioB=lB/(lB+lF)). Calculate the bulbils ratio rather than the flowers ratio because numerous spikes bore no flowers at all. We then calculate the part of stem devoted to the spike (reprod=(lB+lF)/h). Finally, we derive a kind of ponderate ratio (ratiopond=reprod x nratioB).
+* Since we did no measurement on leaf, we consider "reprod" to be an indicator of the plant's investment in reproduction relative to vegetative growth.
+* To  improve  normality  and  homogeneity  of  variance, we take the arcsinus of the square-root of "ratiopond" ("ratiopond.tr"). 
+```{r import_deriv, echo=FALSE,include=FALSE}
+#Import data for all individuals and calcule of derivated measures
+all<-read.table("all.txt",header=T)
+head(all,2)
+all$nratioB<-(all$nB/(all$nB+all$nF))
+all$lratioB<-(all$lB/(all$lB+all$lF))
+all$reprod<-((all$lB+all$lF)/all$h)
+all$ratiopond<-(all$reprod*all$nratioB)
+all$ratiopond.tr <- asin(sqrt(all$ratiopond))  # transformed ratio
+all$site<-as.factor(all$site)
+all$pop<-as.factor(all$pop)
+all$sample<-all$site:all$pop
+head(all,2)
+```
+
+##Environmental variables
+* We first begin the analysis with 10 environmental variables (derived from Zimmermann & Kienast 1999) : annual average number of frost days during growing season (sfroy), degree-days of growing season (ddeg), potential evapotranspiration measures for July (etpt7), moisture balance for July (mbal7), number of precipitations days per growing season (pday), annual average site witer balance (swb), mean of average temperature for July (avetemp7), cloudiness for July (cloud7), mean precipitation sum for July (prec7), global potential shortwave radiation for July (srad7).
+* After analysis of a first principal component analysis (PCA) (see below) and for biological/ecological reasons, we decide to restrict us to 5 variables : "pday", "srad7", "sfroy", "mbal7", "ddeg".
+
+##Data analysis
+
+* Multivariate analyses (PCA : unconstrained, MFA/CoIA : constrained symetrical, RDA : constrained asymetrical, Mantel tests).
+* Linear mixed-effects models (LMM) (West et al. 2007) : 
+    + three-level model for clustered data : units of analysis  (each plant : level 1) nested within randomly sampled clusters ("pop" : level 2), which are in turn nested within other randomly sampled clusters ("site" : level 3) ;
+    + so we have : individual plant (level 1), nested within populations (level 2) and populations ("pop") are nested within mountains ("site" - level 3) ;
+    + investigate whether covariates measured at each level of the hierarchy have an impact on the dependent variable, which is always measured at level 1.
+
+#Results
+##Overview : global altitudinal effect on key variables
+```{r}
+#Height~altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3}
+plot(h~altitude,data=all,ylab="height",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#Number of bulbils ~ altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(nB~altitude,data=all,ylab="number of bulbils",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#Number of flowers ~ altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(nF~altitude,data=all,ylab="number of flowers",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#"nratioB" ~ altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(nratioB~altitude,data=all,ylab="ratio(n) of bulbils (nB/(nB+nF))",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#"reprod" ~ altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(reprod~altitude,data=all,ylab="reprod ((lF+lB)/h)",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#"ratiopond" ~ altitude
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(ratiopond~altitude,data=all,ylab="ratiopond (reprod*nratioB)",xlab="altitude (m.a.s.l.)")
+```
+```{r}
+#"nratioB" ~ reprod
+```
+```{r echo=FALSE, fig.width=4, fig.height=3} 
+plot(nratioB~reprod,data=all,ylab="Ratio bulbils (number)",xlab="reprod")
+```
+```{r}
+#Ratio of bubils (number)
+op<-par(mar=rep(2,4))
+coplot(nratioB~altitude|site,data=all)
+dotchart(all$nratioB,groups=all$site)
+par(op)
+```
+```{r}
+#Ponderate ratio
+op<-par(mar=rep(2,4))
+coplot(ratiopond~altitude|site,data=all)
+dotchart(all$ratiopond,groups=all$site)
+par(op)
+```
+```{r}
+#Ponderate ratio (transformed)
+op<-par(mar=rep(2,4))
+coplot(ratiopond.tr~altitude|site,data=all)
+dotchart(all$ratiopond.tr,groups=all$site)
+par(op)
+```
+##Basic correlations
+
+*Kendall or Spearman ?* In significance testing these two non-parametric coefficients usually produce very similar results and there is no strong reason for preferring one over the other. However, from the calculation point of view, Kendall's coefficient is usually considered to be the more difficult. On the other hand Kendall's coefficient does have an advantage over Spearman's in the respect that its distribution approaches normality more rapidly. Although the two coefficients produce similar results, Spearman's coefficient tends to be larger than Kendall's in absolute value (Colwell & Gillett 1982).
+
+###Height and altitude
+```{r}
+#### Fan & Yang (2009) : r=-0.808, P=0.001
+#### Bauert (1993) : r=-0.55, P<=0.05
+cor.test(all$h,all$altitude, method=c("pearson")) #-0.64
+cor.test(log(all$h),all$altitude, method=c("pearson")) #-0.66
+cor.test(log(all$h),log(all$altitude), method=c("pearson"))
+```
+###Bulbil number and altitude
+```{r}
+#### Fan & Yang (2009) : r=-0.624, P=0.23
+#### Bauert (1993) : rs=-0.75,P<=0.01
+cor.test(all$nB,all$altitude, method=c("pearson")) #-0.42
+cor.test(log(all$nB),all$altitude, method=c("pearson")) #-0.43
+
+
+#partial correlation : taking into account height !!!
+
+require(ppcor)
+pcor.test(log(all$nB), all$altitude, log(all$h), method = c("pearson")) #-0.068, p=0.0048
+pcor.test(log(all$lB), all$altitude, log(all$h), method = c("pearson")) #-0.025, p=0.30
+```
+###Flower number and altitude
+```{r warning=FALSE}
+#### Fan & Yang (2009) : r=-0.483, P=0.095
+#### Bauert (1993) : rs=-0.62, P<=0.05
+cor.test(all$nF,all$altitude, method=c("kendall"))
+cor.test(all$nF,all$altitude, method=c("spearman")) #p-val not exact because of ex-aequos -0.18
+
+
+#partial correlation : taking into account height !!!
+require(ppcor)
+pcor.test(all$nF, all$altitude, all$h, method = c("kendall")) #-0.013, p=0.42
+pcor.test(all$lF, all$altitude, all$h, method = c("kendall")) #-0.022, p=0.18
+```
+###Flower+bulbil number and altitude
+```{r}
+#### Fan & Yang (2009) : r=-0.617, P=0.025
+cor.test((all$nF+all$nB),all$altitude, method=c("pearson"))
+cor.test(log(all$nF+all$nB),all$altitude, method=c("pearson")) #-0.46 p<0.001
+
+require(ppcor)
+pcor.test(log(all$nF+all$nB),all$altitude, all$h,method=c("pearson")) #-0.057, p=0.018
+```
+
+###Ratio bulbil and altitude
+```{r}
+#### Bauert (1993) : rs=0.49, P=0.07
+cor.test(all$nratioB,all$altitude, method=c("pearson"))
+cor.test(log(all$nratioB),all$altitude, method=c("pearson")) #-0.13, p<0.001
+
+require(ppcor)
+pcor.test(log(all$nratioB),all$altitude, all$h,method=c("pearson")) #-0.078, p=0.0012
+
+```
+
+###Bulbils and flowers
+```{r echo=FALSE,fig.width=4, fig.height=3,warning=FALSE}
+#### Fan & Yang (2009) : r=-0.129 P<0.001 
+#### Bauert (1993) : rs=-0.62, P<=0.001
+#Number of flowers ~ number of bulbils
+plot(nF~nB,data=all,ylab="Number of flowers", xlab="Number of bulbils")
+cor.test(all$nF,all$nB, method=c("kendall")) #-0.30
+cor.test(all$lF,all$lB, method=c("kendall")) #-0.26
+
+cor.test(all$nF,all$nB, method=c("spearman")) #not exact p-val because of ex-aequos
+
+#partial correlation : taking into account height !!!
+
+require(ppcor)
+pcor.test(all$nF, all$nB, all$h, method = c("kendall")) #-0.34 p<0.001
+pcor.test(all$lF, all$lB, all$h, method = c("kendall")) #-0.32, p<0.001
+
+```
+
+###Height and spike
+```{r echo=FALSE,fig.width=4, fig.height=3,warning=FALSE}
+#Spike length ~ plant height
+plot((lB+lF)~h,data=all,ylab="Spike length (lF+lB) (cm)", xlab="Plant height (h) (cm)")
+cor.test((all$lF+all$lB),all$h, method=c("pearson"))
+
+cor.test(log(all$lF+all$lB),log(all$h), method=c("pearson")) #0.77
+cor.test(log(all$nF+all$nB),log(all$h), method=c("pearson")) #0.67
+
+#Length flowers part ~ plant height
+plot(lF~h,data=all,ylab="Length flowers part(lF) (cm)", xlab="Plant height (h) (cm)")
+#Lot of zeros, non-parametric test
+cor.test(all$lF,all$h, method=c("kendall")) #0.031
+cor.test(all$nF,all$h, method=c("kendall")) #0.0053
+
+#Length bulbils part ~ plant height
+plot(lB~h,data=all,ylab="Spike length (lB) (cm)", xlab="Plant height (h) (cm)")
+cor.test(all$lB,all$h, method=c("pearson"))
+cor.test(log(all$lB),log(all$h), method=c("pearson"))
+cor.test(log(all$nB),log(all$h), method=c("pearson"))
+```
+
+##Multivariate analyses
+<div style="text-align: justify">
+
+
+*Theoretical aspects : Legendre & Legendre (2012), Borcard et al. (2011)*
+
+###Principal component analysis (PCA)
+
+* The eigenvalues are found by solving characteristic equation of a dispersion matrix S. They represent the amounts of variance of the data along the successive principal axes.
+* The eigenvectors are the principal axes of dispersion matrix S.
+* The main result of PCA is to rotate the axes, using the centroid of the objects as pivo. PCA performed a rotation of the system of axes (descriptors) without changing the positions of the objects with respect to one another.
+* The total variance (sum of diagonal values) in the matrix of eigenvalues is the same as in S, but it is partitioned in a different way. 
+* There are as many eigenvalues as there are descriptors. The successive eigenvalues account for progressively smaller fractions of the variance.
+* The elements of the eigenvectors are also weights, or loadings of the original descriptors, in the linear combination of descriptors from which the principal components are computed. The principal components give the positions of the objects with respect to the new system of principal axes.
+* The positions of all objects with respect to the system of principal axes is given by matrix F of the transformed variables. It is also called the matrix of principal components: F = Y~c~ x U where U is the matrix of eigenvectors and Y~c~ is the matrix of centred observations.
+* PCA provides the information needed to understand the role of the original descriptors in the formation of the principal components. It may also be used to show the relationships among the original descriptors.
+* *Distance biplot* (scaling 1) : the eigenvectors are scaled to unit length. (1) Distances among objects in the biplot are approximations of their Euclidean distances in multidimensional space. (2) The angles among descriptor vectors are meaningless.
+* *Correlation biplot* (scaling 2): each eigenvector is scaled to the square root of its eigenvalue. (1) Distances among objects in the biplot are not approximations of their Euclidean distances in multidimensional space. (2) The angles between descriptors in the biplot reflect their correlations.It consists in scaling the eigenvectors in such a way that the cosines of the angles between descriptor-axes be proportional to their covariances (achieved by scaling each eigenvector to a length equal
+to its standard deviation).
+
+
+####First analysis with the 10 variables  (mean values for each "pop" - without altitude)
+```{r echo=FALSE,include=FALSE}
+var_env<-read.table("var_env.txt",header=T,row.names=1)
+head(var_env,2)
+# Standardize (can also be done later) : 
+var_env <- as.data.frame(scale(var_env))
+# If standardize, mean=0 & sd=1 : 
+apply(var_env, 2, mean)              #2 for columns (1=rows)
+apply(var_env, 2, sd)
+require(vegan)
+```
+```{r PCA}
+# First import and standardize the data.
+# Run PCA and display the biplots : 
+(var_pca<-rda(var_env,scale=TRUE))
+#summary(var_pca)
+scores(var_pca,display=c("species"))
+par(mfrow=c(1,2))
+biplot(var_pca, scaling=1, main="PCA - Distance biplot")
+biplot(var_pca,main="PCA - Correlation biplot")           #by default scaling 2
+```
+
+
+
+
+####Then with the 5 retained variables (mean values for each "pop")
+```{r echo=FALSE,include=FALSE}
+var_env<-read.table("var_env.txt",header=T,row.names=1)
+head(var_env,2)
+# Create new table with only the 5 variables : 
+var_env5<-var_env[,-c(3,6:9)]
+head(var_env5,2)
+# Standardize (can also be done later) :
+var_env5 <- as.data.frame(scale(var_env5))
+# If standardize, mean=0 & sd=1 : 
+apply(var_env5, 2, mean)              #2 for columns (1=rows)
+apply(var_env5, 2, sd)
+```
+```{r PCA_5}
+# First import and standardize the data.
+# Run PCA and display the biplots : 
+(var_pca5<-rda(var_env5,scale=TRUE))
+biplot(var_pca5, scaling=1, main="PCA - Distance biplot")
+biplot(var_pca5,main="PCA - Correlation biplot")          #by default scaling 2
+#summary(var_pca5)
+scores(var_pca5,display=c("species"))
+```
+```{r broken_kaiser,echo=FALSE}
+# Eigenvalues
+(ev <- var_pca5$CA$eig)
+# The Kaiser-Guttman criterion is a EV selecting method that consists in computing the mean of all
+# eigenvalues and interpreting only the axes whose eigenvalues are larger than that mean.
+# Apply Kaiser-Guttman criterion to select axes
+ev[ev > mean(ev)]
+# The Broken stick model randomly divides a stick of unit length into the same number of pieces as 
+# there are PCA axes. The theoretical equation for the broken stick model is known. The pieces are 
+# then put in order of decreasing length and compared to the eigenvalues. One interprets only the axes
+# whose eigenvalues are larger than the length of the corresponding piece of the stick.
+# Apply the Broken stick model
+n <- length(ev)
+bsm <- data.frame(j=seq(1:n), p=0)
+bsm$p[1] <- 1/n
+for (i in 2:n) {
+  bsm$p[i] = bsm$p[i-1] + (1/(n + 1 - i))
+}
+bsm$p <- 100*bsm$p/n
+bsm
+
+# Plot eigenvalues and % of variance for each axis
+barplot(ev, main="Eigenvalues", col="bisque", las=2)
+abline(h=mean(ev), col="red")  # average eigenvalue
+legend("topright", "Average eigenvalue", lwd=1, col=2, bty="n")
+barplot(t(cbind(100*ev/sum(ev),bsm$p[n:1])), beside=TRUE, 
+	main="% variance", col=c("bisque",2), las=2)
+legend("topright", c("% eigenvalue", "Broken stick model"), 
+	pch=15, col=c("bisque",2), bty="n")
+
+```
+
+####With the 5 retained variables and altitude (mean values for each "pop")
+```{r echo=FALSE,include=FALSE}
+var_env<-read.table("var_env.txt",header=T,row.names=1)
+head(var_env,2)
+# Create new table with only the 5 variables : 
+var_env5<-var_env[,-c(3,6:9)]
+altitude<-read.table("mantel.txt",header=T)
+var_env5$altitude<-altitude$altitude
+head(var_env5,2)
+# Standardize (can also be done later) :
+var_env5 <- as.data.frame(scale(var_env5))
+# If standardize, mean=0 & sd=1 : 
+apply(var_env5, 2, mean)              #2 for columns (1=rows)
+apply(var_env5, 2, sd)
+```
+```{r PCA_5_2}
+# First import and standardize the data.
+# Run PCA and display the biplots : 
+(var_pca5<-rda(var_env5,scale=TRUE))
+biplot(var_pca5, scaling=1, main="PCA - Distance biplot")
+biplot(var_pca5,main="PCA - Correlation biplot")          #by default scaling 2
+#summary(var_pca5)
+scores(var_pca5,display=c("species"))
+```
+
+
+###PCA with measures as supplementary variables (mean values for each "pop")
+
+*Escofier & Pagès (2008)*
+
+* Les variables supplémentaires sont simplement projetées sur les axes déterminés par
+les autres variables, dites actives. Cela permet de visualiser les corrélations entre
+n'importe quelle variable.
+* Ajouter l'individu/variable supplémentaire lorsque l'on souhaite qu'il participe à l'interprétation
+des plans factoriels mais non à leur construction.
+
+```{r PCA_supp, echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+env_mes<-env_mes[,-c(1,12)]
+head(env_mes,2)
+env_mes<- as.data.frame(scale(env_mes))
+apply(env_mes,2,sd)
+apply(env_mes,2,mean)
+line<-read.table("env_mesure.txt",header=T)
+env_mes$site<-line$site
+head(env_mes,2)
+require(FactoMineR)
+pca.sup<- PCA(env_mes, quanti.sup=1:10, quali.sup=16)
+pca.sup$eig
+pca.sup$var
+```
+```{r}
+#Add measurements as supplement variables (do not participe in axis construction)
+plot(pca.sup, choix=c("var"))
+# Equilibrium circle of descriptors as reference to assess the contribution of each descriptor to the formation of the reduced space.
+#Individuals factor map (meaningless here): plot(pca.sup, choix=c("ind"))
+```
+
+###PCA with altitude and with measures as supplementary variables (mean values for each "pop")
+```{r PCA_supp_2, echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+altitude<-read.table("mantel.txt",header=T)
+env_mes$altitude<-altitude$altitude
+head(env_mes,2)
+env_mes<-env_mes[,-c(1:4,10,11)]
+env_mes<- as.data.frame(scale(env_mes))
+apply(env_mes,2,sd)
+apply(env_mes,2,mean)
+line<-read.table("env_mesure.txt",header=T)
+env_mes$site<-line$site
+head(env_mes,2)
+require(FactoMineR)
+pca.sup<- PCA(env_mes, quanti.sup=1:5, quali.sup=12)
+pca.sup$eig
+pca.sup$var
+```
+```{r}
+#Add measurements as supplement variables (do not participe in axis construction)
+plot(pca.sup, choix=c("var"))
+# Equilibrium circle of descriptors as reference to assess the contribution of each descriptor to the formation of the reduced space.
+#Individuals factor map (meaningless here): plot(pca.sup, choix=c("ind"))
+```
+
+###PCA with altitude and with derived measurements as supplementary variables (mean values for each "pop")
+```{r PCA_supp_deriv, echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+altitude<-read.table("mantel.txt",header=T)
+env_mes$altitude<-altitude$altitude
+head(env_mes,2)
+env_mes<-env_mes[,-c(1,3,5:10)]
+env_mes<- as.data.frame(scale(env_mes))
+apply(env_mes,2,sd)
+apply(env_mes,2,mean)
+line<-read.table("env_mesure.txt",header=T)
+env_mes$site<-line$site
+head(env_mes,2)
+require(FactoMineR)
+pca.sup<- PCA(env_mes, quanti.sup=1:3, quali.sup=10)
+pca.sup$eig
+pca.sup$var
+```
+```{r}
+#Add measurements as supplement variables (do not participe in axis construction)
+plot(pca.sup, choix=c("var"))
+# Equilibrium circle of descriptors as reference to assess the contribution of each descriptor to the formation of the reduced space.
+#Individuals factor map (meaningless here): plot(pca.sup, choix=c("ind"))
+```
+
+###PCA with environmental variables as supplementary variables (mean values for each "pop")
+```{r PCA_supp_3, echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+env_mes<-env_mes[,-c(1,12)]
+head(env_mes,2)
+env_mes<- as.data.frame(scale(env_mes))
+apply(env_mes,2,sd)
+apply(env_mes,2,mean)
+line<-read.table("env_mesure.txt",header=T)
+env_mes$site<-line$site
+rownames(env_mes)<-env_mes$site
+env_mes$site<-NULL
+head(env_mes,2)
+env_mes<-env_mes[,-c(1,2,3,9,10)]
+require(FactoMineR)
+pca.sup<- PCA(env_mes, quanti.sup=6:10)
+pca.sup$eig
+pca.sup$quanti.sup
+```
+```{r}
+#Add measurements as supplement variables (do not participe in axis construction)
+plot(pca.sup, choix=c("var"))
+# Equilibrium circle of descriptors as reference to assess the contribution of each descriptor to the formation of the reduced space.
+#Individuals factor map (meaningless here): plot(pca.sup, choix=c("ind"))
+```
+
+
+###PCA on the measures to detect intercorrelations among all traits (on all data)
+```{r echo=FALSE,include=FALSE}
+all_mes<-read.table("all.txt",header=T)
+head(all_mes,2)
+all_mes<-all_mes[,5:9]
+head(all_mes,2)
+# Standardize (can also be done later) : 
+all_mes <- as.data.frame(scale(all_mes))
+# If standardize, mean=0 & sd=1 : 
+apply(all_mes, 2, mean)              #2 for columns (1=rows)
+apply(all_mes, 2, sd)
+require(vegan)
+```
+```{r PCA_4}
+# First import and standardize the data.
+# Run PCA and display the biplots : 
+
+(all_mes.pca<-rda(all_mes,scale=TRUE))
+par(mfrow=c(1,2))
+biplot(all_mes.pca, scaling=1, main="PCA - Distance biplot")
+biplot(all_mes.pca,main="PCA - Correlation biplot")           #by default scaling 2
+```
+
+###PCA on the measures to detect intercorrelations among all traits ("pop" mean)
+
+PCA to detect intercorrelations among traits (St'astná et al. 2012).
+
+```{r echo=FALSE,include=FALSE}
+pop_mes<-read.table("env_mesure.txt",header=T)
+head(pop_mes,2)
+pop_mes<-pop_mes[,5:9]
+head(pop_mes,2)
+# Standardize (can also be done later) : 
+pop_mes <- as.data.frame(scale(pop_mes))
+# If standardize, mean=0 & sd=1 : 
+apply(pop_mes, 2, mean)              #2 for columns (1=rows)
+apply(pop_mes, 2, sd)
+
+row.names<-read.table("env_mesure.txt",header=T)
+pop_mes$site<-row.names$site
+rownames(pop_mes)<-pop_mes$site
+pop_mes$site<-NULL
+head(pop_mes,2)
+require(vegan)
+```
+```{r PCA_2}
+# First import and standardize the data.
+# Run PCA and display the biplots : 
+
+(pop_mes.pca<-rda(pop_mes,scale=TRUE) )
+par(mfrow=c(1,2))
+biplot(pop_mes.pca, scaling=1, main="PCA - Distance biplot")
+biplot(pop_mes.pca,main="PCA - Correlation biplot")           #by default scaling 2
+```
+
+###Relation between the 5 variables ?
+```{r echo=FALSE,include=FALSE}
+scat<-read.table("mean_sub.txt",header=T)
+scat$nratioB<-(scat$nB/(scat$nB+scat$nF))
+scat$lratioB<-(scat$lB/(scat$lB+scat$lF))
+scat$reprod<-((scat$lB+scat$lF)/scat$h)
+scat$ratiopond<-(scat$reprod*scat$nratioB)
+scat$ratiopond.tr <- asin(sqrt(scat$ratiopond))  # transformed ratio
+head(scat,2)
+scat_env<-scat[,10:15]
+head(scat_env,2)
+scat_all<-scat[,c(10:15,19)]
+head(scat_all,2)
+scat_k<-scat[,c(10:16)]
+head(scat_k,2)
+```
+
+```{r correlation}
+#With Pearson correlation coefficient : 
+(env.pearson<-cor(scat_env))
+(all.pearson<-cor(scat_all))
+
+#with Kendall coeff. for nratioB
+(all.k<-cor(scat_k,method="kendall"))
+#Kendall for 
+#Plot a matrix of bivariate scatter
+source("panelutils.R")
+pairs(scat_all,panel=panel.smooth, diag.panel=panel.hist)
+pairs(scat_env,panel=panel.smooth, diag.panel=panel.hist)
+```
+
+###Between PCA (between-groups analyses)
+
+* The main objective of the between PCA is to reveal the differences between groups.
+* One add the group information (categorical variable S with many modalities).
+* X matrix (p variables on n individuals), Q diagonal matrix (variable weights), D diagonal matrix (individual weights). 
+* The weights of columns-variables Q don't change, the weights of row-individuals D become the relative frequencies of S i.e. the numbers of individuals per group divided by the total number.
+
+(Dufour 2009)
+
+#####Environmental variables
+
+```{r echo=FALSE,include=FALSE}
+betw<-read.table("mantel.txt",header=T)
+head(betw,2)
+betw_env<-betw[,-c(1:9)]
+head(betw_env)
+require(ade4)
+```
+```{r between_PCA_env}
+pca1<-dudi.pca(betw_env,scann=F,nf=2)
+pca1$eig
+sum(pca1$eig)
+cumsum(pca1$eig)/sum(pca1$eig)
+#inertie<-cumsum(pca1$eig)/sum(pca1$eig)
+#barplot(pca1$eig)
+#env. variables per "pop" -> do the bca betw. "site" (not betw. "pop", no sense)
+bet1<-bca(pca1,betw$site,scan=FALSE,nf=2) #site as categorical variable
+#names(bet1) # to see available bet1$...
+bet1$tab
+#bet1$lw : the weights of the groups are the relative frequencies of the categorical variable
+#summary(betw$site)/length(betw$site)
+bet1$ratio #the between group variance is the inertia of the between PCA 
+#The between inertia is here to 0.3395 i.e. 33.95% of the total inertia is due to the factor.
+plot(bet1) #on retrouve le groupe A/Sio/Lie/M
+```
+```{r echo=FALSE,include=FALSE}
+betw<-read.table("mantel.txt",header=T)
+head(betw,2)
+betw_mes<-betw[,-c(1:3,9:17)]
+head(betw_mes)
+require(ade4)
+```
+
+#####Measurements
+
+```{r between_PCA_mes}
+pca2<-dudi.pca(betw_mes,scann=F,nf=2)
+pca2$eig
+sum(pca2$eig)
+cumsum(pca2$eig)/sum(pca2$eig)
+#inertie<-cumsum(pca2$eig)/sum(pca2$eig)
+#barplot(pca2$eig)
+#env. variables per "pop" -> do the bca betw. "site" (not betw. "pop", no sense)
+bet2<-bca(pca2,betw$site,scan=FALSE,nf=2) #site as categorical variable
+#names(bet2) # to see available bet1$...
+bet2$tab
+#bet2$lw : the weights of the groups are the relative frequencies of the categorical variable
+#summary(betw$site)/length(betw$site)
+bet2$ratio #the between group variance is the inertia of the between PCA 
+#The between inertia is here to 0.1430 i.e. 14.3% of the total inertia is due to the factor.
+plot(bet2)
+```
+
+####(Multi)Collinearity and multiple regression (Logan 2010)
+
+* A predictor variable must not be correlated to the combination of
+other predictor variables. Effects on model fitting:
+    + instability of the estimated partial regression slopes ;
+    + inflated standard errors and confidence intervals of model parameters (increase the type  II error rate, reducing power).
+
+* Multicollinearity can be diagnosed with the following:
+    + investigate pairwise correlations between all the predictor variables either by a correlation matrix or a scatterplot matrix ;
+    + calculate tolerance (1-r^2^ of the relationship between a predictor variable and all the other predictor variables) for each of the predictor variables, which is a measure of the degree of collinearity. Values less < 0.2 should be considered and values < 0.1 given series attention. Variance inflation factor (VIF) are the inverse of tolerance and thus values greater than 5, or worse, 10 indicate collinearity ; 
+    + PCA eigenvalues (from a correlation matrix for all the predictor variables) close to zero indicate collinearity and component loadings may be useful in determining which predictor variables cause collinearity.
+
+* There are several approaches to dealing with collinearity :
+    + remove the highly correlated predictor variable(s), starting with the least most
+biologically interesting variable(s) ; 
+    + PCA regression : regress the response variable
+against the principal components resulting from a correlation matrix for all the
+predictor variables. By definition, each of these principal components are completely
+independent, but the resulting parameter estimates must be back-calculated in order
+to have any biological meaning.
+
+* Interaction terms in multiplicative models are likely to be correlated to their constituent individual predictors, and thus the partial slopes of these individual predictors are likely to be unstable. This problem can be reduced by first centering (subtracting the mean from the predictor values) the individual predictor variables.
+
+```{r echo=FALSE, include=FALSE}
+vif<-read.table("mantel.txt",header=T)
+head(vif,2)
+vif$nratioB<-(vif$nB/(vif$nB+vif$nF))
+vif$lratioB<-(vif$lB/(vif$lB+vif$lF))
+vif$reprod<-((vif$lB+vif$lF)/vif$h)
+vif$ratiopond<-(vif$reprod*vif$nratioB)
+vif$ratiopond.tr <- asin(sqrt(vif$ratiopond))
+head(vif,2)
+vif<-vif[,9:14]
+corvif <- function(dataz) {
+  dataz <- as.data.frame(dataz)
+  #correlation part
+  #cat("Correlations of the variables\n\n")
+  #tmp_cor <- cor(dataz,use="complete.obs")
+  #print(tmp_cor)
+  
+  #vif part
+  form    <- formula(paste("fooy ~ ",paste(strsplit(names(dataz)," "),collapse=" + ")))
+  dataz   <- data.frame(fooy=1,dataz)
+  lm_mod  <- lm(form,dataz)
+  
+  cat("\n\nVariance inflation factors\n\n")
+  print(myvif(lm_mod))
+}
+
+#Support function for corvif. Will not be called by the user
+myvif <- function(mod) {
+  v <- vcov(mod)
+  assign <- attributes(model.matrix(mod))$assign
+  if (names(coefficients(mod)[1]) == "(Intercept)") {
+    v <- v[-1, -1]
+    assign <- assign[-1]
+  } else warning("No intercept: vifs may not be sensible.")
+  terms <- labels(terms(mod))
+  n.terms <- length(terms)
+  if (n.terms < 2) stop("The model contains fewer than 2 terms")
+  if (length(assign) > dim(v)[1] ) {
+    diag(tmp_cor)<-0
+    if (any(tmp_cor==1.0)){
+      return("Sample size is too small, 100% collinearity is present")
+    } else {
+      return("Sample size is too small")
+    }
+  }
+  R <- cov2cor(v)
+  detR <- det(R)
+  result <- matrix(0, n.terms, 3)
+  rownames(result) <- terms
+  colnames(result) <- c("GVIF", "Df", "GVIF^(1/2Df)")
+  for (term in 1:n.terms) {
+    subs <- which(assign == term)
+    result[term, 1] <- det(as.matrix(R[subs, subs])) * det(as.matrix(R[-subs, -subs])) / detR
+    result[term, 2] <- length(subs)
+  }
+  if (all(result[, 2] == 1)) {
+    result <- data.frame(GVIF=result[, 1])
+  } else {
+    result[, 3] <- result[, 1]^(1/(2 * result[, 2]))
+  }
+  invisible(result)
+}
+
+```
+```{r vif,warning=FALSE}
+# VIF coefficients with "corvif" function (Zuur et al. 2009, Highland Statistics LTD)
+corvif(vif) 
+
+#removing "altitude""
+vif2<-vif[,-1]
+corvif(vif2)
+
+#removing "mbal7" 
+vif3<-vif2[,-3]
+corvif(vif3)       
+#all are now <3
+```
+
+###CoInertia Analysis (CoIA)
+
+* Co-inertia analysis (CoIA) and Procrustes analysis (Proc) search for
+common structures between two data sets Y~1~ and Y~2~ describing the same objects. Each
+object has two representations in the joint plot, one from Y~1~ and the other from Y~2~.
+* Symmetrical approach allowing the use of various
+methods to model the structure in each data matrix.
+* Analysis for two data tables as follows:
+    + Compute the covariance matrix crossing the variables of the two data tables. The
+sum of squared covariances is the total co-inertia. Compute the eigenvalues and
+eigenvectors of that matrix. The eigenvalues represent a partitioning of the total
+co-inertia.
+    + Project the points and variables of the two original data tables on the co-inertia
+axes. By means of graphs, compare the projections of the two data tables in the
+common co-inertia space.
+* One particularly attractive feature of CoIA is the possibility to choose the type
+of ordination to apply to each data table prior to the joint analysis (chosen according to the research question and the
+mathematical type of the data).
+* Imposes fewer constraints than CCorA regarding the mathematical
+type and the number of variables in the two tables. However, that the row
+weights must be equal in the two separate ordinations, a condition that renders the
+use of CoIA with correspondence analysis difficult. 
+
+
+```{r means,echo=FALSE,include=FALSE}
+env_mes<-read.table("mantel.txt",header=T)
+head(env_mes,2)
+names(env_mes[,4:8])
+names(env_mes[,9:14])
+plant <- env_mes[,4:8]       #mesures (without "derived"" measures)
+env <- env_mes[,9:14]      #environmental variables (NB : this time with altitude)
+require(ade4)
+```
+```{r CoIA}
+#PCA on both matrices
+dudi.plant<-dudi.pca(plant,scale=TRUE,scan=FALSE,nf=2)
+dudi.env<-dudi.pca(env,scale=TRUE,scan=FALSE,nf=2)
+
+#Relative variation of EV
+dudi.plant$eig/sum(dudi.plant$eig)
+dudi.env$eig/sum(dudi.env$eig)
+
+#Equal row weights in the 2 analyses ? 
+all.equal(dudi.plant$lw,dudi.env$lw)
+#Must be equal in the two separate ordinations 
+
+#Co-inertia analysis
+coia.plant.env<-coinertia(dudi.plant,dudi.env,scan=FALSE,nf=2)
+
+
+#Relative variation on 1st EV
+coia.plant.env$eig[1]/sum(coia.plant.env$eig)
+
+summary(coia.plant.env)
+
+#MC procedure to test whether the co-inertia between the two multivariate data sets significantly deviate from chance
+randtest(coia.plant.env,nrepet=999)
+
+plot(coia.plant.env)
+
+```
+
+* The numerical results first present the eigenvalue decomposition of the matrix
+of co-inertia: eigenvalues (eig), covariance (covar) and standard deviation (sdX and
+sdY) of the two sets of site scores on the co-inertia axes and correlations between
+the two sets of site scores. This correlation is computed as covar/(sdX*sdY).
+* The second block of results compares the inertia of the (cumulated) projections
+of the X and Y data tables as projected in the CoIA (inertia) compared to the maximum
+inertia of the axes of the separate ordinations (max). It also gives the ratio
+between these values as a measure of concordance between the two projections.
+* The RV coefficient is a multivariate generalization of the Pearson correlation coefficient.
+
+###Multiple Factor Analysis (MFA)
+
+
+* Symmetrical analysis of a data set described by k (usually
+k > 2) subsets or groups of variables. 
+* This analysis is correlative; it excludes any hypothesis of causal
+influence of a data set on another. 
+* The variables must belong to the same mathematical
+type (quantitative or qualitative) within each subset. 
+* If all variables are
+quantitative, then MFA is basically a PCA applied to the whole set of variables in
+which each subset is weighted.
+* Handle a group of individuals described by many groups of variables. PCA on the full table X -> variables are weighted  :
+    + equilibrates the role of variable groups 
+    + gives a representation of individuals and variables that can be interpreted according usual PCA rules
+* Taking into account group of variables improves the possibilities to interpret the results.
+* Can be used to compare several data sets describing the same objects. MFA analyzes observations described by several blocks  or sets of variables. Seeks the common structures present in all or some of these sets. 
+* Performed in two steps :
+    + A PCA is computed for each (centred and optionally standardized) subset of
+variables. Each centred table is then weighted to give them equal weights in the
+global analysis, accounting for different variances among the groups. This is
+done by dividing all its variables by the first eigenvalue obtained from its PCA;
+    + The k weighted data sets are concatenated. The resulting table is submitted to a
+global PCA; 
+    + The different subsets of variables are then projected on the global result; common
+structures and differences are assessed for objects and variables.
+* MFA consists in projecting objects and variables of two or more data sets on a global PCA, computed from all data sets, in which the sets receive equal weights. For the comparison of two data sets, the algebra of MFA differs from that of CoIA. 2 groups of species collected at the same sites can be compared by co-inertia analysis (CoIA) and several groups by multiple factor analysis (MFA).
+* The RV coefficient is the ratio of the total co-inertia to the square root of the
+product of the squared total inertias of the separate analyses. RV is a multivariate generalization of the Pearson correlation coefficient.
+
+#####Without altitude
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("mantel.txt",header=T)
+head(env_mes,2)
+names(env_mes[,4:8])
+names(env_mes[,10:14])
+plant <- env_mes[,4:8]       #mesures (without "derived"" measures)
+env <- env_mes[,10:14]      #environmental variables (NB : without altitude)
+tab<- data.frame(env, plant, env_mes$site)
+dim(tab)
+head(tab,2)
+(grn <- c(ncol(env), ncol(plant), 1))
+require(FactoMineR)
+```
+```{r MFA}
+tab.mfa <- MFA(tab, group=grn, type=c("c","c","n"), ncp = 2, name.group = c("Env", "Plant", "Site"), num.group.sup = 3) 
+tab.mfa$group
+tab.mfa$quanti.var
+#group : number of variables in each group, type : c for quanti. variables, n for categorical ones, ncp : number of dimensions, num.group.sup : index of the illustrative groupe.
+plot(tab.mfa, choix="ind", habillage=11)
+plotellipses(tab.mfa, keepvar=11)
+coeffRV(plant,env)
+```
+
+*Escofier & Pagès (2008)*
+* Ellipse de confiance pour traduire la variabilité des individus autour des centres de gravité,
+analogue bi-dimensionnel de l'intervalle de confiance que l'on calcule usuellement
+autour d'une moyenne. 
+* Procédure "bootstrap" (pour chaque échantillon "bootstrap", calculer les centres de gravité et les projeter  en supplémentaire sur les plans). L'ellipse est centrée sur le centre de gravité initial et contient 95 % des n centres de gravité bootstrap. 
+* La taille d'une ellipse ainsi obtenue dépend de la variabilité (dans le plan factoriel)
+des individus présentant la modalité étudiée mais aussi de son effectif.
+
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("mantel.txt",header=T)
+head(env_mes,2)
+names(env_mes[,4:8])
+names(env_mes[,9:14])
+plant <- env_mes[,4:8]       #mesures (without "derived"" measures)
+env <- env_mes[,9:14]      #environmental variables (NB : this time with altitude)
+tab<- data.frame(env, plant, env_mes$site)
+dim(tab)
+head(tab,2)
+(grn <- c(ncol(env), ncol(plant), 1))
+require(FactoMineR)
+```
+
+#####With altitude
+
+```{r MFA_altitude}
+tab.mfa <- MFA(tab, group=grn, type=c("c","c","n"), ncp = 2, name.group = c("Env", "Plant", "Site"), num.group.sup = 3)
+tab.mfa$group
+tab.mfa$quanti.var
+#group : number of variables in each group, type : c for quanti. variables, n for categorical ones, ncp : number of dimensions, num.group.sup : index of the illustrative groupe.
+plot(tab.mfa, choix="ind", habillage=12)
+plotellipses(tab.mfa, keepvar=12)
+# The similarity between the geometrical representations derived from each group of variables is measured by the RV coefficient
+coeffRV(plant,env)
+
+```
+
+
+###Redundancy Analysis (RDA)
+
+(=regression followed by PCA)
+
+
+*Borcard et al. (2011)*
+
+* Method combining regression and principal component analysis (PCA).
+Direct extension of regression analysis to model multivariate response data.
+* Multivariate (meaning multiresponse) multiple linear
+regression followed by a PCA of the table of fitted values. 
+* Works on a matrix Y of centred response data and a matrix X of centred (or, more generally,
+standardized) explanatory variables.
+* Computes axes that are linear combinations of the explanatory variables. In other words, this
+method seeks, in successive order, a series of linear combinations of the explanatory
+variables that best explain the variation of the response matrix. 
+* The axes defined in the space of the explanatory variables are orthogonal to one another.
+RDA is therefore a constrained ordination procedure. 
+* The difference with unconstrained ordination is important: the matrix of explanatory variables conditions the
+"weights" (eigenvalues), the orthogonality and the direction of the ordination axes.
+* In RDA, one can truly say that the axes explain or model (in the statistical sense)
+the variation of the dependent matrix. Furthermore, a hypothesis (H0) of absence of
+linear relationship between Y and X can be tested in RDA; this is not the case in PCA.
+* Each of the canonical axes is a linear combination (i.e. a multiple regression model) of all explanatory variables.
+RDA is usually computed, for convenience, on standardized explanatory variables; the
+fitted values of the regressions, as well as the canonical analysis results, are unchanged
+by standardization of the X variables.
+* The statistical significance of an RDA (global model) and that of individual
+canonical axes can be tested by permutations.
+
+
+*Legendre & Legendre (2012)*
+
+* It's one of the forms of canonical analysis available to interpret the structure of quantitative data using one or several tables of explanatory variables.
+* RDA test has greater power to detect a difference than a co-inertia test because it uses the information more efficiently. 
+* The null hypothesis of the RDA test is H0 : there is no difference between before and after for data described by the same variables, whereas the null hypothesis in CoIA is H0: the two data sets have no more co-inertia structure than random data sets would have, without any reference to the variables being the same in the two data sets.
+* Redundancy is synonymous with explained variance.
+* Plot : 
+    + Each canonical ordination axis corresponds to a direction, in the multivariate scatter of objects, that is maximally related to a linear combination of the explanatory variables X. A canonical axis is thus similar to a principal component.
+    + 2 ordinations of the objects may be plotted along the canonical axes: 
+         1. linear combinations of the Y variables (matrix F), as in PCA
+         2. linear combinations of the fitted variables (matrix Z) which are thus also linear combinations of the X variables. 
+    + Preserves the Euclidean distances among objects in matrix , which contains values of Y fitted by regression 
+to the explanatory variables X ; variables in are therefore linear combinations of the X variables.
+* It works on a matrix Y of centred response data and a matrix X of centred (or, more generally, standardized) explanatory variable.
+
+#####With altitude
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,12:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+```{r RDA}
+#For RDA : do not take derived measures
+#Also take altitude as environmental variables (to do enventuallay variance partitioning later)
+#Standardize and convert into data frame
+mes<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+
+# rda(Y,X,W) where Y is the response matrix,X is the matrix of explanatory variables and W is an optional matrix of covariables
+rda.site<-rda(mes~.,env)   #same as : rda(mes,env), but need formula for anova 
+#summary(rda.site)
+coef(rda.site)
+plot(rda.site)
+
+# percentage of variance explained by axis 1
+rda.site$CCA$eig[1]/rda.site$tot.chi
+
+# percentage of variance explained by axis 2
+rda.site$CCA$eig[2]/rda.site$tot.chi
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(rda.site)$r.squared)
+(R2_adj <- RsquareAdj(rda.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2_adj)
+vif.cca(rda.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(rda.site,by="axis")
+anova(rda.site,by="term")
+
+```
+
+
+#####Without altitude
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+```{r RDA_noalt}
+#For RDA : do not take derived measures
+#Also take altitude as environmental variables (to do enventuallay variance partitioning later)
+#Standardize and convert into data frame
+mes<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+# rda(Y,X,W) where Y is the response matrix,X is the matrix of explanatory variables and W is an optional matrix of covariables
+rda.site<-rda(mes~.,env)   #same as : rda(mes,env), but need formula for anova 
+#summary(rda.site)
+coef(rda.site)
+plot(rda.site)
+
+# percentage of variance explained by axis 1
+rda.site$CCA$eig[1]/rda.site$tot.chi
+
+# percentage of variance explained by axis 2
+rda.site$CCA$eig[2]/rda.site$tot.chi
+
+# percentage of variance explained by axis 3
+rda.site$CCA$eig[3]/rda.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(rda.site$CCA$eig[2]/rda.site$tot.chi)+(rda.site$CCA$eig[1]/rda.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(rda.site$CCA$eig[2]/rda.site$tot.chi)+(rda.site$CCA$eig[1]/rda.site$tot.chi)+(rda.site$CCA$eig[3]/rda.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(rda.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(rda.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2_adj)
+vif.cca(rda.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(rda.site,by="axis")
+anova(rda.site,by="term")
+
+```
+
+
+#####Partial RDA
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+alt<-read.table("partial.txt",header=T,row.names=1)
+alt<-alt[,3]
+head(env,2)
+head(mes,2)
+head(alt,2)
+require(vegan)
+part<-read.table("part.txt",header=T,row.names=1)
+head(part,2)
+```
+
+```{r partial_RDA}
+#RDA with all variables
+(rda_all<-rda(mes~altitude+sfroy+ddeg+pday+mbal7+srad7,data=part))
+coef(rda_all)
+(R2 <- RsquareAdj(rda_all)$r.squared)           
+(R2_adj <- RsquareAdj(rda_all)$adj.r.squared)
+anova(rda_all,by="axis")
+anova(rda_all,by="term")
+
+#RDA without altitude
+(rdaB<-rda(mes~sfroy+ddeg+pday+mbal7+srad7,data=part))
+coef(rdaB)
+(R2 <- RsquareAdj(rdaB)$r.squared)           
+(R2_adj <- RsquareAdj(rdaB)$adj.r.squared)
+anova(rdaB,by="axis")
+anova(rdaB,by="term")
+
+####RDA with 1 factor
+#altitude
+(rda_alt<-rda(mes~altitude,data=part))
+coef(rda_alt)
+(R2 <- RsquareAdj(rda_alt)$r.squared)           
+(R2_adj <- RsquareAdj(rda_alt)$adj.r.squared)
+
+anova(rda_alt,by="term")
+
+#sfroy
+(rda_sfroy<-rda(mes~sfroy,data=part))
+coef(rda_sfroy)
+(R2 <- RsquareAdj(rda_sfroy)$r.squared)           
+(R2_adj <- RsquareAdj(rda_sfroy)$adj.r.squared)
+
+anova(rda_sfroy,by="term")
+
+#ddeg
+(rda_ddeg<-rda(mes~ddeg,data=part))
+coef(rda_ddeg)
+(R2 <- RsquareAdj(rda_ddeg)$r.squared)           
+(R2_adj <- RsquareAdj(rda_ddeg)$adj.r.squared)
+
+anova(rda_ddeg,by="term")
+
+#pday
+(rda_pday<-rda(mes~pday,data=part))
+coef(rda_pday)
+(R2 <- RsquareAdj(rda_pday)$r.squared)           
+(R2_adj <- RsquareAdj(rda_pday)$adj.r.squared)
+
+anova(rda_pday,by="term")
+
+#mbal7
+(rda_mbal<-rda(mes~mbal7,data=part))
+coef(rda_mbal)
+(R2 <- RsquareAdj(rda_mbal)$r.squared)           
+(R2_adj <- RsquareAdj(rda_mbal)$adj.r.squared)
+
+anova(rda_mbal,by="term")
+
+#srad7
+(rda_srad<-rda(mes~srad7,data=part))
+coef(rda_srad)
+(R2 <- RsquareAdj(rda_srad)$r.squared)           
+(R2_adj <- RsquareAdj(rda_srad)$adj.r.squared)
+
+anova(rda_srad,by="term")
+
+###
+# Partial RDA
+###
+
+#(part.RDA<-rda(mes,env,alt))  need formula for anova
+(part.RDA<-rda(mes~sfroy+ddeg+mbal7+pday+srad7+Condition(altitude),data=part))
+coef(part.RDA)
+plot(part.RDA)
+(R2 <- RsquareAdj(part.RDA)$r.squared)           
+(R2_adj <- RsquareAdj(part.RDA)$adj.r.squared)
+
+#inverse :
+(part.RDA2<-rda(mes~altitude+Condition(sfroy+ddeg+mbal7+pday+srad7),data=part))
+coef(part.RDA2)
+plot(part.RDA2)
+(R2 <- RsquareAdj(part.RDA2)$r.squared)           
+(R2_adj <- RsquareAdj(part.RDA2)$adj.r.squared)
+
+```
+(Total) : total inertia (variance in this case) of the response data.
+(Conditioned) : amount of variance that has been
+explained by the covariables and removed.
+(Constrained) : amount of variance uniquely explained by the explanatory variables.
+(Unconstrained) : residual variance. 
+
+The values given as proportions (right-hand column) are unadjusted and are therefore biased. 
+
+Eigenvalues, and their contribution to the variance after removing the contribution of conditioning variables: these values and proportions are partial in the sense that the effects of the covariables have been removed. 
+
+The sum of all these eigenvalues corresponds therefore to the sum of the constrained and unconstrained (residual) variances, excluding the conditioned (i.e. removed) variance.
+
+
+###Canonical Correspondence Analysis (CCA)
+
+#####Legendre et Legendre (2012)
+
+* Similar to RDA, the difference is that CCA preserves the $\chi$~2~ distance (as in correspondence analysis), instead of the Euclidean distance among objects in matrix . Calculations are a bit
+more complex. 
+* RDA is used when the X variables display linear relationships with the Y variables, whereas CCA can be used
+in the cases where correspondence analysis would be appropriate for an ordination of Y alone.
+
+#####Borcard et al. (2011)
+
+* Basically, it is a weighted form of RDA applied to the same matrix Q of
+contributions to the \$chi$~2~ statistic as used in CA.
+* CCA shares the basic properties of CA, combined with those of a
+constrained ordination. 
+* It preserves the $\chi$~2~ distance among sites, and species are
+represented as points in the triplots. 
+* ter Braak (1986) has shown that, provided that
+some conditions are fulfilled, CCA is a good approximation of a multivariate
+Gaussian regression. 
+* CCA does have some drawbacks, however, related to the mathematical properties
+of the $\chi$~2~ distance. 
+* Furthermore, the proportion of total inertia represented
+by explained inertia (inertia is the measure of explained variation of the
+data in CCA), which can be interpreted as an R~2~, is also biased, but no simple
+method exists for its adjustment. 
+
+#####Alatalo et al. (2014)
+
+* Because it was unknown whether the underlying responses were linear or non-linear, they performed both CCA and RDA. Since the three first axes of RDA explained a larger cumulative proportion of variance, they chose to use RDA.
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+
+```{r CCA_noalt_raw}
+cca.site<-cca(mes~.,env)   
+summary(cca.site)
+coef(cca.site)
+plot(cca.site)
+
+# percentage of variance explained by axis 1
+cca.site$CCA$eig[1]/cca.site$tot.chi
+
+# percentage of variance explained by axis 2
+cca.site$CCA$eig[2]/cca.site$tot.chi
+
+# percentage of variance explained by axis 3
+cca.site$CCA$eig[3]/cca.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)+(cca.site$CCA$eig[3]/cca.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(cca.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(cca.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2)
+vif.cca(cca.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(cca.site,by="axis")
+anova(cca.site,by="term")
+
+```
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("env_mesure.txt",header=T)
+head(env_mes,2)
+mes<-env_mes[,5:9]
+rownames(mes)<-env_mes[,1]
+head(mes,2)
+env<-env_mes[,13:17]
+rownames(env)<-env_mes[,1]
+head(env,2)
+require(vegan)
+require(packfor) 
+```
+
+```{r CCA_noalt_std}
+
+es<-as.data.frame(scale(mes))
+env<-as.data.frame(scale(env))
+
+cca.site<-cca(mes~.,env)   
+summary(cca.site)
+coef(cca.site)
+plot(cca.site)
+
+# percentage of variance explained by axis 1
+cca.site$CCA$eig[1]/cca.site$tot.chi
+
+# percentage of variance explained by axis 2
+cca.site$CCA$eig[2]/cca.site$tot.chi
+
+# percentage of variance explained by axis 3
+cca.site$CCA$eig[3]/cca.site$tot.chi
+
+#cumulative proportion of variance explained by the 2 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)
+
+
+#cumulative proportion of variance explained by the 3 first axes : 
+(cca.site$CCA$eig[2]/cca.site$tot.chi)+(cca.site$CCA$eig[1]/cca.site$tot.chi)+(cca.site$CCA$eig[3]/cca.site$tot.chi)
+
+# R-squared and adjusted-R2
+(R2 <- RsquareAdj(cca.site)$r.squared)           #compare with the R^2 obtained with Mantel test
+(R2_adj <- RsquareAdj(cca.site)$adj.r.squared)
+
+# check Variance Inflation Factors (colinearity between predictors) and simplify the rda-model
+forward.sel(mes, env, adjR2thresh=R2)
+vif.cca(cca.site)     
+#analyse linear dependencies among constraints and conditions
+#VIF are the inverse of tolerance, > 5, or worse, 10 indicate collinearity
+anova(cca.site,by="axis")
+anova(cca.site,by="term")
+
+```
+=> Canonical correlations are unchanged by the standardization.
+
+###Mantel test (mean measures for each site)
+
+* Matrix comparison : Mantel tests relate similarity or distance matrices derived from rectangular data tables. Used to test relationships between association matrices, not between the rectangular date tables from which they originate. 
+* Method to compare two similarity (S) or distance matrices (D), computed for the same objects, and test a hypothesis about the relationship between these matrices. Should not be used to test hypotheses about the relationships between the original data tables. The two matrices must be computed for the same *n* objects listed in the same order.
+* Mantel statistics are tested by permutation. The *n* objects forming the rows and columns of the similarity or distance matrices are the permutable units, so that the permutations actually concern the *n* objects.
+* Usually one-tailed since (in most cases, strong hypothesis about the sign of the correlation between the two matrices being compared).
+* The Mantel test is only valid if one matrix is independent of the resemblance measures in the other matrix, i.e. it should not be derived in any way from the other matrix nor from the data that were used to compute the other matrix.
+
+######Legendre & Legendre (2012)
+
+* The basic form of the Mantel statistic, called z~M~, is the scalar product
+of the (unstandardized) values in the two resemblance matrices, excluding the main
+diagonal, which only contains trivial values (1's for similarities, 0's for distances) for
+which no estimate has been computed.
+* A second approach is to
+standardize the values in each of the two vectors of resemblance before computing the
+Mantel statistic. The cross-product statistic, bounded between -1 and +1, behaves
+like a correlation coefficient and is called r~M~. 
+* A third approach is to transform the
+distances into ranks (Dietz, 1983) before computing the standardized Mantel statistic;
+this is equivalent to computing a Spearman correlation coefficient
+between the corresponding values of matrices D~Y~ and D~X~.
+* Permutation test leads to the same p-value with statistics z~M~ or r~M~ because all
+cross-product results, permuted or not, are affected in the same way by linear
+transformations of one or both vectors of distances.
+* H0: The distances among objects in matrix D~Y~ are not (linearly or monotonically) related to
+the corresponding distances in D~X~.
+* H1: The distances among points in matrix D~Y~ are related to the distances in D~X~.
+* The z~M~ or the r~M~ statistics may be transformed into another statistic, called t by Mantel
+(1967), which is asymptotically normal. It is tested by referring to a table of the standard
+normal distribution. It provides a good approximation of the probability when n is large.
+* Like the Pearson correlation coefficient, the Mantel statistic formula is a linear model that
+brings out the linear component of the relationship between the values in two distance
+matrices. 
+* Strong nonlinearities may prevent the identification of relationships in Mantel tests.
+This led Mantel (1967) and Dietz (1983) to suggest the use of the Spearman or Kendall
+nonparametric correlation coefficients, instead of Pearson's r, as the statistic in Mantel tests.
+* The Mantel test is only valid if matrix D~X~ is independent of the resemblance
+measures in D~Y~, i.e. D~X~ should not be derived in any way from D~Y~ nor from the data
+that were used to compute D~Y~
+* Mantel tests should be restricted to test hypotheses concerning distances. A Mantel test
+between two distance matrices D~Y~ and D~X~ derived from raw data tables Y and X is not
+equivalent to (1) the test of a correlation coefficient computed between two vectors of raw
+data, (2) a test computed by linear regression between a response vector y and an explanatory
+matrix X, or (3) a test in canonical analysis between a multivariate response matrix Y and an
+explanatory matrix X.
+* When it detects a correlation in the original data, the
+Mantel test may not correctly estimate the sign of the correlation coefficient, and it produces
+tests with lower power than the test of Pearson's r. 
+* The Mantel test is inappropriate to test hypotheses concerning correlations in raw data
+(RDA more appropriate and more powerful).
+* Mantel tests should be limited to questions about relationships between distance matrices.
+
+######Guillot & Rousset (2012)
+
+* Partial Mantel test : aimed at assessing the dependence between two matrices of distances while controlling the effect of a third distance matrix.
+* Appealing features of Mantel tests : (i) allow one to synthesize information contained in multivariate
+data in a single index and hence in a single test; (ii) allow one to deal with the case outlined above
+where the 'distance' between individuals cannot be expressed as a difference (or combination of differences) between one or several variables (e.g. case of a cost distance); (iii) they do not seem to rely on any parametric assumption.
+* Under the two-random-function model and in the presence of autocorrelation, both the simple and partial Mantel tests fail to return the targeted type I error rate.
+* In case autocorrelation is suspected, a recommended strategy consists
+in entering the matrix D^s^ of geographical distances in a partial Mantel
+test between D^x^ and D^y^ with the aim of 'controlling the effect of distances'.
+* In the absence of
+spatial autocorrelation in both variables, the simple and partial
+Mantel tests perform well. If spatial structure is present
+in the data in the form of a deterministic linear trend only
+(no autocorrelation), this can be controlled by introducing a
+third matrix of geographical distances in a partial Mantel test. As soon as spatial structure is present
+in the form of autocorrelation,
+the simple Mantel test fails to achieve the targeted type I error rate. 
+* It produces indeed a considerable excess of small P-values
+i.e. the simple Mantel test rejects the null hypothesis of independence
+too often and produces a much higher number of
+false positives than what it should do. In the presence of autocorrelation,
+including the matrix of geographic distances in a
+partial Mantel test does not 'control' autocorrelation as the
+excess of small P-values remains substantial. 
+* Legendre & Fortin (2010): 'The Mantel test should not be used as a general
+method for the investigation of linear relationships or spatial
+structures in univariate or multivariate data. Its use should be
+restricted to tests of hypotheses that can only be formulated in
+terms of distances'.
+* Hypotheses
+are better described as features of probability distributions
+(e.g. a correlation function), and that distances matrices are
+only a way of representing data, not a way of specifying
+hypotheses. Thus, no set of conditions where partial Mantel
+tests are valid is identified by such claims.
+* The incentive for developing the partial Mantel test was the
+intuition that one variable can have a confounding effect when
+analysing the dependence between two other variables. The
+method fails to fulfil its promise because the method was not
+based on an explicit statistical model and the implicit underlying
+model (a simple regression) is most often not appropriate.
+
+######Diniz-Filho et al. (2013)
+
+* Partial Mantel test : compare the relationship between two matrices, but taking
+into account the effect of a third one (usually the geographical
+distances).
+* When analyzing spatially distributed data, the main
+issue is to find out if the two matrices are "causally" related
+(i.e., in the sense that they indicate an ecological or evolutionary
+process), or if the observed relationship appears
+only because both variables are spatially structured by intrinsic
+effects (i.e., distance-structured dispersal causing
+more similarity between neighboring populations).
+* When one is interested in evaluating the statistical
+correlation between two variables (say, an allele frequency
+and temperature) whose values are spatially distributed, the
+most common (and statistically sound) approach is to apply
+spatial regression methods.
+* When the hypotheses are specified in
+terms of distance matrices, such as in the case of isolation-
+by-distance and many landscape models, the most popular approach is to apply
+partial Mantel tests.
+* By far, the partial test is still the most controversial
+application of Mantel test, and there has been a long discussion
+about its statistical performance in terms of Type I error
+and power.
+* Guillot &
+Rousset (2013) recently found very high Type I error rates
+for partial Mantel tests and strongly condemned their use.
+Nonetheless simulations showed that other approaches
+for estimating partial correlation between matrices
+(e.g. RDA) may also have inflated
+Type I error rates (Legendre et al., 2005; Peres-Neto
+and Legendre, 2010). 
+* A simple solution to this problem
+with Type I error was given by Oden and Sokal (1992), who
+pointed out that when using partial Mantel tests it is important
+to be conservative and only reject the null hypothesis of
+no correlation if p is much smaller (say, p = 0.001) than the
+nominal level of 5%. 
+* We believe
+that the Mantel test can be a powerful approach to analyze
+multivariate data, mainly if the ecological or evolutionary
+hypotheses are better (or only) expressed as pairwise distances
+or similarities.
+Even though, an important guideline is to always
+check the assumptions of linearity and homoscedasticity in
+the relationships between genetic divergence and other matrices, because such violations
+are actually expected under theoretical models. If these violations occur, a global Mantel test may be a
+biased description of the amount of spatial variation in the
+data. 
+* Partial Mantel tests can still be applied, but
+using a more conservative critical level for defining their
+significance and, if possible, coupled with ordination and
+spatial eigenfunction analyses.
+
+######Legendre & Fortin (2010)
+
+* Numerical simulations
+show that in tests of significance of the relationship between simple variables and multivariate
+data tables, the power of linear correlation, regression and canonical analysis is far
+greater than that of the Mantel test and derived forms, meaning that the former methods are
+much more likely than the latter to detect a relationship when one is present in the data.
+* The Mantel test does not correctly estimate the proportion of the original data variation
+explained by spatial structures. The Mantel test should not be used as a general method for
+the investigation of linear relationships or spatial structures in univariate or multivariate data.
+Its use should be restricted to tests of hypotheses that can only be formulated in terms of
+distances.
+* The Mantel test is not equivalent to either a correlation
+or regression analysis in the univariate case, or a
+canonical analysis in the multivariate case.
+* There is a great difference in power between
+these alternative tests, and for spatial analysis, more
+powerful alternatives are available, unless the hypothesis
+to be tested strictly concerns distances. 
+* Mantel
+tests underestimate the coefficient of determination estimating
+the variation explained by the spatial structure.
+* The null
+hypothesis of the Mantel test states that the distance
+matrices are unrelated in some specified way (linear relationship).
+This assumption can be relaxed to that of a
+monotonic relationship by using the Spearman instead of
+the Pearson correlation to compute r~M~. 
+* Distances can also be
+transformed using logs or other simple functions, but
+more complex forms of nonlinearity cannot easily be handled
+by the Mantel test. Splines and other nonlinear
+smoothing methods can, however, be used on distance-
+distance or distance-similarity dispersion diagrams to fit
+a curve to the plot.
+* R^2^, the
+coefficient of determination or the square of the Pearson
+correlation between two vectors cannot be equal to R^2^~M~, the square of the
+Mantel correlation between the derived distance matrices.
+The Pearson correlation r and
+Mantel r~M~ statistics are based on different sums-ofsquares
+that are not equal.
+* The Pearson correlation
+is a statistic describing the linear relationship
+between the variables (monotonic relationship in the case
+of the Spearman correlation), whereas the Mantel statistic
+based on the Pearson formula describes the linear relationship
+between distances (or a monotonic relationship
+if the Spearman formula is used).
+* Testing the relationship between
+two variables and rectangular data tables is not equivalent
+to testing the relationship between distance matrices
+derived from them.
+* The values of R^2^~M~ of a
+Mantel test or a regression on distance matrices are
+always much lower than those of the R^2^ of a (multiple)
+regression or canonical analysis computed on the raw
+data.
+* The test of
+the Pearson correlation has much greater power than the
+Mantel test to detect a linear relationship between data
+vectors; this means that the test of Pearson's r is more
+likely than the Mantel test to detect a relationship when it
+is present in the data. 
+* When the correlation between
+the two original vectors is negative, the Mantel test cannot
+detect its sign. Using a Mantel two-tailed test to
+detect a relationship among distances whatever its sign is
+not a good solution either because two-tailed tests have
+less power than one-tailed tests. 
+* The value of the
+Mantel statistic is always much smaller than the population
+correlation, so it cannot be used as an estimate of that
+correlation.
+* The amount of error affects
+the power of the Mantel test more than it does the test of
+the correlation coefficient in this simple form of trendsurface
+analysis.
+* The Mantel test is more likely to
+identify the gradient along a transect than on a map.
+* Permutation tests used in
+the analysis of rectangular data tables by regression or
+canonical analysis, or in the analysis of distance matrices
+by Mantel tests, all have correct levels of type I error.
+* For the
+detection of multivariate species-environment relationships,
+linear analysis by RDA has far greater power than
+methods based on distance matrices. This means that
+when a relationship is present in data, one is much more
+likely to detect it by RDA than by Mantel test or regression
+on distance matrices. 
+* For autocorrelated data, each
+method (RDA and Mantel) had variants that did better
+than using the X and Y coordinates only, but RDA always
+outperformed the distance-based Mantel tests.
+* A Mantel test only produces an r statistic and a P-value.
+Canonical analysis produces results that are much
+richer: biplots are produced, and the contribution of each
+response and explanatory variable is computed and can
+be examined in biplots. 
+* Another drawback is that an adjusted R^2^ (R^2^~adj~) cannot
+be computed from Mantel statistics.
+* Additivity is a nice property of linear variation partitioning:
+an identical total amount of explained variation
+of Y is obtained, whether all explanatory variables are
+put in a single table X or they are divided into any number
+of tables. The effects of the explanatory variables are
+thus additive. This is not the case in partitioning on distances:
+different total amounts of explained variation for
+the response D(Y) are obtained if one includes all explanatory
+variables in a single distance matrix D(X) or if separate
+distance matrices are computed for the groups of
+explanatory variables. Variation partitioning should not be performed on distance matrices.
+* One should use multiple regression (for a single
+response variable) or canonical redundancy analysis
+(RDA) when investigating response-environment relationships
+or spatial structures, unless the hypothesis to
+be tested is strictly formulated in terms of distances (or
+involves the variance of the distances). The reasons are
+the following: (i) the null hypothesis of the Mantel test
+involves distances, whereas those of correlation analysis,
+regression analysis and RDA involve the original variables
+(rectangular data tables); and (ii) correlation analysis
+and RDA lead to higher R^2^ statistics and offer a
+more powerful test than Mantel analysis in tests of
+hypothesis involving relationships among the original
+variables.
+* For testing a bivariate correlation
+hypothesis, e.g. between a response and an environmental
+variable, the test of the Pearson correlation has much
+greater power than the Mantel test to detect a linear
+relationship between data vectors; this means that the
+test of Pearson's r is more likely than the Mantel test to
+detect a relationship when it is present in the data.
+* For the
+detection of species-environment relationships or spatial
+structures in the multivariate response data (e.g. several
+species, several alleles), linear analysis by RDA has far
+greater power than methods based on distance matrices.
+* The
+denominator of the Pearson correlation (or partitioned
+by multiple regression or RDA), and that of the Mantel
+test and derived forms (such as linear regression on distance
+matrices), are not equal, are not a simple functions
+of, and cannot be reduced to each other (different sum-of-squares statistics).
+
+```{r echo=FALSE,include=FALSE}
+env_mes<-read.table("mantel.txt",header=T)
+head(env_mes,2)
+names(env_mes[,4:8])
+names(env_mes[,10:14])
+spa<-read.table("lat.txt",header=T)
+spa2<-read.table("partial.txt",header=T)
+head(spa,2)
+head(spa2,2)
+require(vegan)
+```
+```{r mantel}
+plant <- env_mes[,4:8]       #mesures (without "derived"" measures)
+env <- env_mes[,10:14]      #environmental variables (NB : without altitude)
+spa<-spa[,-1]                           #coordonnées des "pop" (x/y)
+spa2<-spa2[,-1]
+#Compute distance matrices to run Mantel test
+plant.eu <- vegdist(scale(plant), "euclidean")      #computes dissimilarity matrices/indices
+env.eu <- vegdist(scale(env), "euclidean")
+spa.eu<-vegdist(scale(spa),"euclidean")
+spa2.eu<-vegdist(scale(spa2),"euclidean")
+
+#H0 : the 2 matrices are uncorrelated
+#mantel(xids,ydis)
+
+#mantel site betw. plant measures & env.variables
+(mantel_site<-mantel(plant.eu, env.eu, strata=env_mes$site, method="kendall",permutations=999)) 
+
+#mantel site betw. plant measures & geographic coordinates
+(mantel_site<-mantel(plant.eu, spa.eu, strata=env_mes$site, method="kendall",permutations=999)) 
+
+#partial Mantel test : 
+#Partial Mantel statistic uses partial correlation conditioned on the third matrix. Only the first matrix is permuted so that the correlation structure between second and first matrices is kept constant. Although mantel.partial silently accepts other methods than "pearson", partial correlations will probably be wrong with other methods.
+#mantel.partial(xdis, ydis, zdis)
+(partial_mantel_site<-mantel.partial(plant.eu,env.eu,spa.eu,strata=env_mes$site,permutations=999))
+
+#partial test : also include altitude with the geographic coordinates
+(partial_mantel_site<-mantel.partial(plant.eu,env.eu,spa2.eu,strata=env_mes$site,permutations=999))
+
+
+#999 : gives 1000 in total because the 1st computed (before computation) also participate in the test of sigificance
+```
+
+##Tree
+
+*Lecture Notes (Kienast et al. 2012)*
+
+* Classification and regression trees (CART) are an alternative method to GLM and GAM. 
+* Iterative optimization algorithm that searches to optimize a dichotomous decision key for explaining a dependent variable from a set of independent predictors. 
+* It is closely related to regressions, but similar to GAM we do not get regression parameters, but rather a tree.
+* We read the tree such that if we know the condition of a site, then we enter the tree at the top, and we drop the value through the tree until it comes to a terminal node. Terminal nodes are indicated with an asterisk.
+* CART models are extremely sensitive to overfitting. 
+* CART models are very flexible. As GAM they do not require the dependent variable to follow any statistical distribution. Often CART is slightly or significantly less accurate than GLMs and GAMs. It knows only black and white, no gray shades. 
+* Larger trees are often not easy to interpret ecologically. Yet it gives a quick overview of what predictors seem to make sense. Thus CART is often used for data screening.
+```{r echo=FALSE,include=FALSE}
+#Import data for all individuals and calcule of derivated measures
+all<-read.table("all_mes_env.txt",header=T)
+head(all,2)
+all$nratioB<-(all$nB/(all$nB+all$nF))
+all$lratioB<-(all$lB/(all$lB+all$lF))
+all$reprod<-((all$lB+all$lF)/all$h)
+all$ratiopond<-(all$reprod*all$nratioB)
+all$ratiopond.tr <- asin(sqrt(all$ratiopond))  # transformed ratio
+head(all,2)
+require(tree)
+require(randomForest)
+```
+
+#####With altitude
+
+```{r tree_alt}
+plot(tree(ratiopond ~  altitude+sfroy+ddeg+mbal7+pday+srad7, data=all)); text(tree(ratiopond ~  altitude+sfroy+ddeg+mbal7+pday+srad7, data=all))
+
+model_alt<-tree(ratiopond ~  altitude+sfroy+ddeg+mbal7+pday+srad7, data=all)
+plot(prune.tree(model_alt)); 
+#Additional deviance (fit) achieved by adding more nodes beyond (3)4 seems marginal (cost-complexity curve begins to decline at this point). This suggests that the tree could potentially be pruned to just (3)4 terminal branches without a great loss of predictive power to achieve a more genuine predictive model (Logan 2010).
+plot(prune.tree(model_alt,best=4));text(prune.tree(model_alt,best=4))
+
+
+for.fit_alt <- randomForest(ratiopond ~  altitude+sfroy+ddeg+mbal7+pday+srad7,   data=all)
+plot(for.fit_alt)
+varImpPlot(for.fit_alt)
+print(for.fit_alt)      # view results 
+importance(for.fit_alt) # importance of each predictor 
+```
+
+#####Without altitude
+
+```{r tree}
+plot(tree(ratiopond ~  sfroy+ddeg+mbal7+pday+srad7, data=all)); text(tree(ratiopond ~  sfroy+ddeg+mbal7+pday+srad7, data=all))
+
+model<-tree(ratiopond ~  sfroy+ddeg+mbal7+pday+srad7, data=all)
+plot(prune.tree(model)); 
+
+#The tree could potentially be pruned to just (3)4 terminal branches without a great loss of predictive power to achieve a more genuine predictive model (Logan 2010).
+
+plot(prune.tree(model,best=4));text(prune.tree(model,best=4))
+
+for.fit <- randomForest(ratiopond ~  sfroy+ddeg+mbal7+pday+srad7,   data=all)
+plot(for.fit)
+varImpPlot(for.fit)
+print(for.fit)      # view results 
+importance(for.fit) # importance of each predictor 
+```
+
+##Tukey HSD (between each "pop" within each "site")
+
+
+```{r import_anova, echo=FALSE,include=FALSE}
+#Import data for all individuals and calcule of derivated measures
+all<-read.table("all.txt",header=T)
+head(all,2)
+all$nratioB<-(all$nB/(all$nB+all$nF))
+all$lratioB<-(all$lB/(all$lB+all$lF))
+all$reprod<-((all$lB+all$lF)/all$h)
+all$ratiopond<-(all$reprod*all$nratioB)
+all$ratiopond.tr <- asin(sqrt(all$ratiopond))  # transformed ratio
+head(all,2)
+require(lattice)
+require(car)
+require(mgcv)
+A <- all[all$site=="A",]
+Lie <- all[all$site=="Lie",]
+Lou <- all[all$site=="Lou",]
+M <- all[all$site=="M",]
+Sim <- all[all$site=="Sim",]
+Sio <- all[all$site=="Sio",]
+V <- all[all$site=="V",]
+ZRo <- all[all$site=="ZRo",]
+ZWi <- all[all$site=="ZWi",]
+```
+
+####Anzère
+
+```{r A}
+#summary(A)
+
+#hist(A$ratiopond.tr)
+plot(A$ratiopond~A$altitude)
+bwplot(A$ratiopond~as.factor(A$altitude))
+
+#levels(as.factor(A$altitude))
+
+lm.A <- aov((A$ratiopond.tr)~as.factor(A$altitude))
+#summary.lm(lm.A)
+TukeyHSD(lm.A)
+            qqPlot(resid(lm.A))
+            plot(aov((A$ratiopond.tr)~as.factor(A$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=A), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=A))
+#k is the dimension of the basis used to represent the smooth term
+#if edf=1 => straight line  (linear)
+```
+
+####Lienne
+
+```{r Lie}
+#summary(Lie)
+
+#hist(Lie$ratiopond.tr)
+plot(Lie$ratiopond~Lie$altitude)
+bwplot(Lie$ratiopond~as.factor(Lie$altitude))
+
+#levels(as.factor(Lie$altitude))
+
+lm.Lie <- aov((Lie$ratiopond.tr)~as.factor(Lie$altitude))
+#summary.lm(lm.Lie)
+TukeyHSD(lm.Lie)
+            qqPlot(resid(lm.Lie))
+            plot(aov((Lie$ratiopond.tr)~as.factor(Lie$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=Lie), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=Lie))
+
+```
+
+####Lourtier
+
+```{r Lou}
+#summary(Lou)
+
+#hist(Lou$ratiopond.tr)
+plot(Lou$ratiopond~Lou$altitude)
+bwplot(Lou$ratiopond~as.factor(Lou$altitude))
+
+#levels(as.factor(Lou$altitude))
+
+lm.Lou <- aov((Lou$ratiopond.tr)~as.factor(Lou$altitude))
+#summary.lm(lm.Lou)
+TukeyHSD(lm.Lou)
+            qqPlot(resid(lm.Lou))
+            plot(aov((Lou$ratiopond.tr)~as.factor(Lou$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=Lou), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=Lou))
+
+```
+
+####Montana
+
+```{r M}
+#summary(M)
+
+#hist(M$ratiopond.tr)
+plot(M$ratiopond~M$altitude)
+bwplot(M$ratiopond~as.factor(M$altitude))
+
+#levels(as.factor(M$altitude))
+
+lm.M <- aov((M$ratiopond.tr)~as.factor(M$altitude))
+#summary.lm(lm.M)
+TukeyHSD(lm.M)
+            qqPlot(resid(lm.M))
+            plot(aov((M$ratiopond.tr)~as.factor(M$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=M), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=M))
+
+```
+
+####Simplon
+
+```{r Sim}
+#summary(Sim)
+
+#hist(Sim$ratiopond.tr)
+plot(Sim$ratiopond~Sim$altitude)
+bwplot(Sim$ratiopond~as.factor(Sim$altitude))
+
+#levels(as.factor(Sim$altitude))
+
+lm.Sim <- aov((Sim$ratiopond.tr)~as.factor(Sim$altitude))
+#summary.lm(lm.Sim)
+TukeyHSD(lm.Sim)
+            qqPlot(resid(lm.Sim))
+            plot(aov((Sim$ratiopond.tr)~as.factor(Sim$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=4), data=Sim), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=4), data=Sim))
+
+```
+
+####Sionne
+
+```{r Sio}
+#summary(Sio)
+
+#hist(Sio$ratiopond.tr)
+plot(Sio$ratiopond~Sio$altitude)
+bwplot(Sio$ratiopond~as.factor(Sio$altitude))
+
+#levels(as.factor(Sio$altitude))
+
+lm.Sio <- aov((Sio$ratiopond.tr)~as.factor(Sio$altitude))
+#summary.lm(lm.Sio)
+TukeyHSD(lm.Sio)
+            qqPlot(resid(lm.Sio))
+            plot(aov((Sio$ratiopond.tr)~as.factor(Sio$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=Sio), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=Sio))
+
+```
+
+####Vercorin
+
+```{r V}
+#summary(V)
+
+#hist(V$ratiopond.tr)
+plot(V$ratiopond~V$altitude)
+bwplot(V$ratiopond~as.factor(V$altitude))
+
+#levels(as.factor(V$altitude))
+
+lm.V <- aov((V$ratiopond.tr)~as.factor(V$altitude))
+#summary.lm(lm.V)
+TukeyHSD(lm.V)
+            qqPlot(resid(lm.V))
+            plot(aov((V$ratiopond.tr)~as.factor(V$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=V), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=V))
+
+```
+
+####ZRothorn
+
+```{r ZRo}
+#summary(ZRo)
+
+#hist(ZRo$ratiopond.tr)
+plot(ZRo$ratiopond~ZRo$altitude)
+bwplot(ZRo$ratiopond~as.factor(ZRo$altitude))
+
+#levels(as.factor(ZRo$altitude))
+
+lm.ZRo <- aov((ZRo$ratiopond.tr)~as.factor(ZRo$altitude))
+#summary.lm(lm.ZRo)
+TukeyHSD(lm.ZRo)
+            qqPlot(resid(lm.ZRo))
+            plot(aov((ZRo$ratiopond.tr)~as.factor(ZRo$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=ZRo), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=ZRo))
+
+```
+
+####ZWisshorn
+
+```{r ZWi}
+#summary(ZWi)
+
+#hist(ZWi$ratiopond.tr)
+plot(ZWi$ratiopond~ZWi$altitude)
+bwplot(ZWi$ratiopond~as.factor(ZWi$altitude))
+
+#levels(as.factor(ZWi$altitude))
+
+lm.ZWi <- aov((ZWi$ratiopond.tr)~as.factor(ZWi$altitude))
+#summary.lm(lm.ZWi)
+TukeyHSD(lm.ZWi)
+            qqPlot(resid(lm.ZWi))
+            plot(aov((ZWi$ratiopond.tr)~as.factor(ZWi$altitude)))
+
+plot(gam(ratiopond~s(altitude, k=5), data=ZWi), shade=T, res=T, pch=17)
+summary(gam(ratiopond~s(altitude, k=5), data=ZWi))
+
+```
+
+
+
+##Linear mixed-effects model (LMM)
+<div style="text-align: justify">
+
+Packages lme4 (Bates et al. 2014) and nlme (Pinheiro et al. 2015)
+
+*Theoretical aspects : West et al. (2007)*
+
+General equation :
+
+R~i~=X~i~ x $\beta$ + Z~i~ x b~i~ + $\epsilon$~i~
+
+
+Because the random effects come from a large population, there is no much point in concentrating on estimating means of our small subset of factor levels [...]. Much better to recognize them for what they are, random samples from a much larger population, and to concentrate on their variance. This is the added variation caused by differences between levels of the random effects (Crawley 2007).
+
+
+Correlation between the pseudoreplicates within a group causes shrinkage. The BLUPs (parameter estimates, a~i~) are smaller than the fixed effect size (y~i~^-^-$\mu$). When $\sigma$~a~^2^ (between-group variance which introduces the correlation between the pseudoreplicates within each group) is estimated to be large compared with the estimate of $\sigma$^2^/n (where $\sigma$ is the residual variance), then the fixed effects and the BLUP are similar. When $\sigma$~a~^2^ is estimated to be small compared with the estimate of $\sigma$^2^/n, then the fixed effects and the BLUP can be very different. BLUPs given by : a~i~=(effect size)*($\sigma$~a~^2^/($\sigma$~a~^2^+$\sigma$^2^/n)) (Crawley 2007).
+
+### Random factors (effects) vs. fixed factors (effects)
+
+* *Random factor* : classification variable with levels that can be thought of as being randomly sampled from a population of levels being studied. All possible levels of the random factor are not present in the data set, but it is the researcher's intention to make inferences about the entire population of levels. The levels of random factors do not represent conditions chosen specifically to meet the objectives of the study.
+* *Random effects* : represented by (unobserved) random variables, which are usually assumed to follow a normal distribution. when the levels of a factor can be thought of as having been sampled from a sample space, such that each particular level is not of intrinsic interest (e.g., classrooms or clinics that are randomly sampled from a larger population of classrooms or clinics). They are specific to clusters or subjects within a population. Consequently, random effects are directly used in modeling the random variation in the dependent variable at different levels of the data. They are random values associated with the levels of a random factor (or random factors). These values, which are specific to a given level of a random factor, usually represent random deviations from the relationships described by fixed effects. Random effects associated with the levels of a random factor can enter an LMM as random intercepts (representing random deviations for a given subject or cluster from the overall fixed intercept), or as random coefficients (representing random deviations for a given subject or cluster from the overall fixed effects).
+* *Fixed factor* : categorical or classification variable, for which the investigator has included all levels (or conditions) that are of interest in the study. Levels chosen so that they represent specific conditions, and they can be used to define contrasts (or sets of contrasts) of interest in the research study.
+* *Fixed effects* : represented by constant parameters. Describe the relationships of the predictor variables (i.e. fixed factors or continuous covariates) to the dependent variable for an entire population. Assumed to be unknown fixed quantities, and we estimate them based on our analysis of the data collected in a given research study.
+* Fixed effects influence only the mean of y ; random effects influence only the variance of y.
+
+
+###Nested vs. crossed factors
+
+* *Nested* : when a particular level of a factor (random or fixed) can only be measured within a single level of another factor and not across multiple levels. The effects of the nested factor on the response are known as nested effects. Example : schools and classrooms within schools were randomly sampled and levels of classroom (one random factor) are nested within levels of school (another random factor), because each classroom can appear within only one school.
+* *Crossed* : when a given level of a factor (random or fixed) can be measured across multiple levels of another factor, one factor is said to be crossed with another, and the effects of these factors on the dependent variable are known as crossed effects.
+
+###Estimation in LMMs
+In the LMM, we estimate the fixed-effect parameters, and the covariance parameters. 2 common methods to estimate these parameters :  
+
+* *Maximum likelihood (ML) estimation* : method of obtaining estimates of unknown parameters by optimizing a likelihood function. To apply ML estimation, we first construct the likelihood as a function of the parameters in the specified model, based on distributional assumptions. The maximum likelihood estimates (MLEs) of the parameters are the values of the arguments that maximize the likelihood function (i.e., the values of the parameters that make the observed values of the dependent variable most likely, given the distributional assumptions). 
+
+* *Restricted maximum likelihood (REML) estimation* : (sometimes called residual maximum likelihood estimation) was introduced as a method of estimating variance components in the context of unbalanced incomplete block designs.  REML is often preferred to ML estimation, because it produces unbiased estimates of covariance parameters by taking into account the loss of degrees of freedom that results from estimating the fixed effects.
+
+* To compare nested random structures : we must use REML estimators.
+* To compare models with nested fixed effects but with the same random structure : ML estimation.
+
+
+In general terms, we use maximum likelihood methods (either REML or ML estimation) to obtain estimates of the covariance parameters in an LMM. We then obtain estimates of the fixed-effect parameters using results from generalized least squares. However, ML estimates of the covariance parameters are biased, whereas REML estimates are not. Note that the variances of the estimated fixed effects are biased downward in both ML and REML estimation.
+
+
+When used to estimate the covariance parameters, ML and REML estimation are computationally intensive ; both involve the optimization of some objective function, which generally requires starting values for the parameter estimates and several subsequent iterations to find the values of the parameters that maximize the likelihood function.
+
+###Information criteria
+
+The information criteria (sometimes referred to as fit criteria) provide a way to assess the fit of a model based on its optimum log-likelihood value, after applying a penalty for the parameters that are estimated in fitting the model. A key feature of the information criteria is that they provide a way to compare any two models fitted to the same set of observations; i.e., the models do not need to be nested. We use the "smaller is better" form for the information criteria discussed in this section; that is, a smaller value of the criterion indicates a "better" fit. Recent work suggests that no one information criterion stands apart as the best criterion to be used when selecting LMMs.
+
+* *Akaike information criterion (AIC)* : may be calculated based on the (ML or REML) log-likelihood. The AIC "penalizes" the fit of a model for the number of parameters being estimated.
+* *Bayes information criterion (BIC)* : applies a greater penalty for models with more parameters than does the AIC, because we multiply the number of parameters being estimated by the natural logarithm of *n*, where *n* is the total number of observations used in estimation of the model.
+
+##### Johnson & Omland (2004)
+
+* *Akaike information criterion (AIC)*: an estimate of the expected Kullback-Leibler information lost by using a model to approximate the 
+process that generated observed data (full reality). Has 2 components: (i) negative loglikelihood, which measures lack of model fit to 
+the observed data, (ii) a bias correction factor, which increases as a function of the number of model parameters.
+* *Schwarz criterion (SC)* (also known as the Bayesian information criterion - BIC): a model selection criterion designed to find the most 
+probable model (from a Bayesian perspective) given the data. Superficially similar to AIC~c~, SC has 2 components: (i) negative log-
+likelihood, which measures lack of fit, (ii) a penalty term that varies as a function of sample size and the number of model parameters. 
+SC is equivalent (under certain conditions) to the natural logarithm of the Bayes factor.
+
+* So we have : 
+     + AIC => fit + complexity 
+     + BIC => fit + complexity + sample size
+     
+###Construction of the model
+In our case, we identify :
+
+* Level 1 = plant, level 2 = pop, level 3 = site : plant nested in pop, pop nested in site ; 
+* Thus hierarchical clustered data (the dependent variable is measured once for each subject (the unit of analysis) and the units of analysis are nested within clusters of units) ;
+* "pop", "site" and "individuals" are random factors ;
+* The 5 environmental variables and the altitude are fixed-effects associated with the factors of the level 2
+* See other file for details of model selection (starting with a full model : top-down strategy recommended by Zuur et al. 2009 & Diggle et al. 2002).
+```{r import_all, echo=FALSE,include=FALSE}
+all<-read.table("all_mes_env.txt",header=T)
+head(all,2)
+all$nratioB<-(all$nB/(all$nB+all$nF))
+all$lratioB<-(all$lB/(all$lB+all$lF))
+all$reprod<-((all$lB+all$lF)/all$h)
+all$ratiopond<-(all$reprod*all$nratioB)
+all$ratiopond.tr <- asin(sqrt(all$ratiopond))  # transformed ratio
+head(all,2)
+require(lme4)
+require(MuMIn)
+```
+```{r LMM,warning=FALSE}
+#Fit the initial "unconditional" (variance components) model and decide whether to omit the random effects of the level 2 (population). 
+#site<-all$site
+#pop<-all$site
+model1<-lmer(ratiopond.tr~altitude+(1|site/pop),all,REML=TRUE)
+summary(model1)
+anova(model1)
+
+#Model validation
+plot(model1,type=c("p","smooth")) #fitted vs. residual
+plot(model1,sqrt(abs(resid(.)))~fitted(.),type=c("p","smooth")) #scale-location
+#qqmath(model1,id=0.05) # quantile-quantile
+
+
+#R2
+r.squaredGLMM(model1)  #conditional and marginal coefficient of determination for GLMM
+# marginal : concerned with variance explained by fixed factors
+# conditional : concerned with variance explained by both random and fixed factors
+r.squaredLR(model1) #calculate a coefficient of determination based on the likelihood-ratio test (R_LR²)
+
+plot(model1,type=c("p","smooth")) #fitted vs. residual
+plot(model1,sqrt(abs(resid(.)))~fitted(.),type=c("p","smooth")) #scale-location
+#qqmath(m1,id=0.05) # quantile-quantile
+
+
+```
+
+
+#Appendix 1
+Site                   | Altitude | Collected spikes
+---------------------- | ---------|---------------------------
+Anzère (A)| | 
++A1|1547|30
++A2|1778|30
++A3|1894|30
++A4|2001|30
++A5|2303|30
++A6|2460|30
+Lienne (Lie)||
++Lie1|1088|30
++Lie2|1602|30
++Lie3|1822|30
++Lie4|2151|30
++Lie5|2299|30
++Lie6|2425|30
++Lie7|2539|30
+Lourtier (Lou)||
++Lou1|1978|30
++Lou2|2132|30
++Lou3|2308|30
++Lou4|2440|30
++Lou5|2590|29
+Montana (M)||
++M1|1660|30
++M2|1757|30
++M3|1995|30
++M4|2130|30
++M5|2265|30
++M6|2420|30
++M7|2520|30
+Simplon (Sim)||
++Sim1|1977|30
++Sim2|2089|30
++Sim3|2193|30
++Sim4|2292|30
+Sionne (Sio)||
++Sio1|1337|30
++Sio2|1541|25
++Sio3|1600|30
++Sio4|1777|30
++Sio5|2229|30
++Sio6|2353|30
++Sio7|2572|30
++Sio8|2674|30
++Sio9|2761|30
+Vercorin (V)||
++V1|1701|30
++V2|1970|30
++V3|2192|30
++V4|2327|30
++V5|2429|30
++V6|2532|30
++V7|2645|30
+Zermatt-Rothorn (ZRo)||
++ZRo1|1846|30
++ZRo2|2374|30
++ZRo3|2541|30
++ZRo4|2732|30
++ZRo5|2891|30
++ZRo6|3071|30
++ZRo7|3212|30
+Zermatt-Wisshorn (ZWi)||
++ZWi1|1939|30
++ZWi2|2057|30
++ZWi3|2321|30
++ZWi4|2584|30
++ZWi5|2936|30
+---------------------- | ---------|-----------------
+```{r echo=FALSE,include=FALSE}
+map<-read.table("lat.txt",header=T)
+sub<-read.table("mean_sub.txt",header=T)
+map$sub<-sub$sub
+map$sub<-as.numeric(map$sub)
+head(map,2)
+```
+```{r map,echo=FALSE}
+require(RgoogleMaps)
+source("convert_CH.R")  #download from swisstopo
+#convert x/y -> long/lat 
+xy <- cbind(map$x, map$y)
+#y longitude, y latitude
+## Convert CH y/x to WGS lat, function as : CH.to.WGS.lat <- function (y, x)
+Lat<-CH.to.WGS.lat(map$x,map$y)
+## Convert CH y/x to WGS long, function as : CH.to.WGS.lng <- function (y, x)
+Long<-CH.to.WGS.lng(map$x,map$y)
+## specify coordinates:
+lat <- c(min(Lat),max(Lat));
+lon <- c(min(Long),max(Long));
+MyMap <-GetMap.bbox(latR =lat ,lonR = lon,maptype='satellite',destfile = "map.png");
+## display the map:
+pic <- PlotOnStaticMap(MyMap)
+## the geographical coordinates are transformed to picture coordinates
+## necessary for correct overlay...
+cord <- LatLon2XY.centered(MyMap,Lat,Long)
+## the locations as points:
+points(cord$newX,cord$newY,col=colors()[4*map$sub],lwd=1)
+## Text to name the locations. Not nice. Same coordinates as points...
+text(cord$newX,cord$newY,map$pop,cex=0.8,col=colors()[142*0.1*map$sub])
+```` 
+
+
